@@ -10,19 +10,15 @@ import Languages from "./Languages";
 import TitleContacts from "./TitleContacts";
 import MainLayout from "./MainLayout";
 import React from "react";
+import Background from "./Images/background9.jpg";
 
 function App() {
   return (
     <MainLayout title={"Home Page"}>
       <div className="app">
         {/* first section */}
-        <div>
+        <div className="container">
           <div className="header">
-            <style jsx global>{`
-              header {
-                background: red;
-              }
-            `}</style>
             <div className="title-container">
               <Languages />
               <div className="title">
@@ -81,6 +77,9 @@ function App() {
         </div> */}
       </div>
     </MainLayout>
+    // <div>
+
+    // </div>
   );
 }
 
