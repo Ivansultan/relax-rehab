@@ -1,14 +1,15 @@
 import '../styles/global.css'
+import Head from 'next/head'
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <>
-     <Component {...pageProps} />
-     <style jsx global>{`
-        body {
-          background-image: url("/pages/Images/background3.jpg");
-        }
-     `}</style>
+    <>   
+        <Head>
+          <link rel="shortcut icon" href="/favicon.ico" width="16px" height="16px"/>
+        </Head>
+        <Component {...pageProps} />
+        <style jsx global>{``}</style>
     </>
   )
 }
+

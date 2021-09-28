@@ -1,11 +1,10 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-
 class MyDocument extends Document {
   render() {
     return (
       <Html>
         <Head>
-            
+          
         </Head>
         <body>
           <Main />
@@ -14,6 +13,8 @@ class MyDocument extends Document {
       </Html>
     )
   }
+
+  
 }
 
 export default MyDocument

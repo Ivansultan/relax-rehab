@@ -1,19 +1,32 @@
+
+
 body {
   margin: 0 auto;
-  /* background-image: url("..container/background9.jpg") no-repeat 50% 50% fixed; */
+  
 }
+
+.background-image {
+  /* width: 100%;
+  height: 100%; */
+  /* margin: 0 auto; */
+  /* display: flex; */
+  
+}
+
+/* .landingText {
+  position: relative;
+  text-align: center;
+  color:aliceblue
+} */
 
 .app {
   text-align: center;
 }
 
 .container {
-  
 }
 
-.header {
-  /* background-color: aqua; */
-  
+.header {  
 }
 
 .title-container {
@@ -22,12 +35,15 @@ body {
   text-align: center;
   margin-top: -10px;
   width: 100%;
+  position: relative;
+  color: rgb(228, 238, 240)
 }
 
 .languages-container {
   display: flex;
   justify-content: flex-end;
   width: 40%;
+  
 } 
 
 .languages {
@@ -38,11 +54,9 @@ body {
   width: 120px;
 }
 
-/* .ua {
-  width: 100%;
-    height: 20%;
-    background: linear-gradient(to top, yellow 50%, blue 50%);
-} */
+.ua {
+  
+}
 
 .title {
   width: 100%;
