@@ -28,6 +28,12 @@ export default function SimplePopover() {
   return (
     <div>
       <Button
+        style={{
+          width: "100%",
+          backgroundColor: "lightgray",
+          opacity: 0.5,
+          color: "black",
+        }}
         aria-describedby={id}
         variant="contained"
         color="default"

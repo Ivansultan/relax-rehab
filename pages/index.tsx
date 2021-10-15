@@ -1,89 +1,91 @@
-import Head from "next/head";
-// import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
-import Popover from "./Popover";
-import Button from "@material-ui/core/Button";
-import Menu from "./Menu";
-import Image from "next/image";
-import logoPic from "./Images/logo.png";
-import Languages from "./Languages";
-import TitleContacts from "./TitleContacts";
+import HomePage from "./HomePage";
 import MainLayout from "./MainLayout";
-import React from "react";
-import Background from "./Images/background.jpg";
+import React, { useReducer, useState } from "react";
+import Background from "./Images/background.jpeg";
+import Image from "next/image";
+import Massages from "./Massages";
+import { IntlProvider } from "react-intl";
+import Russian from "../translations/ru.json";
+import English from "../translations/en.json";
+import Ukrainian from "../translations/ua.json";
+import BottomNavPanel from "./BottomNavPanel";
+
+type Locale = "en" | "ru" | "ua";
+
+type State = {
+  locale: Locale;
+};
+
+type Action = State & {
+  type: "setLocale";
+};
+
+const reducer = (state: State, action: Action) => {
+  switch (action.type) {
+    case "setLocale":
+      return { locale: action.locale };
+    default:
+      throw new Error();
+  }
+};
+
+const messages = {
+  en: English,
+  ru: Russian,
+  ua: Ukrainian,
+};
+
+type Language = {
+  name: string;
+  locale: Locale;
+};
+
+export const languages: Language[] = [
+  { name: "EN", locale: "en" },
+  { name: "RU", locale: "ru" },
+  { name: "UA", locale: "ua" },
+];
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, { locale: "ru" });
+  const { locale } = state;
+  const [_window, setSize] = useState(undefined);
+
+  React.useEffect(() => {
+    setSize(window);
+  }, []);
+
+  if (!_window) {
+    return <div>Loading...</div>;
+  }
+
+  const { innerHeight, innerWidth } = _window;
+  console.log("locale", locale);
+
   return (
-    <MainLayout title={"Юмейхо терапия"}>
-      <div>
-        <Image
-          src={Background}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-        />
-        <div className="app">
-          {/* first section */}
-          <div className="container">
-            <div className="header">
-              <div className="title-container">
-                <Languages />
-                <div className="title">
-                  <h1 className="title-first-line">Массаж </h1>
-                  <h1 className="title-second-line">расслабляющий и</h1>
-                  <h1 className="title-second-line">реабилитационный</h1>
-                </div>
-                <TitleContacts />
-              </div>
-              <div className="nav-panel">
-                <div className="left-section">
-                  {/* <Menu /> */}
-                  <Link href={"/Massages"}>
-                    <Button variant="contained">Массажи</Button>
-                  </Link>
-                  <Link href={"/WorkResults"}>
-                    <Button variant="contained">Результаты работ</Button>
-                  </Link>
-                  <Link href={"/FAQ"}>
-                    <Button variant="contained">FAQ</Button>
-                  </Link>
-                </div>
-
-                <div className="right-section">
-                  <Link href={"/AboutMe"}>
-                    <Button variant="contained">Обо мне</Button>
-                  </Link>
-
-                  <Link href={"/Reviews"}>
-                    <Button variant="contained">Отзывы</Button>
-                  </Link>
-
-                  <Popover />
-                </div>
-              </div>
-            </div>
-            <div className="logo-image">
-              <div className="logo">
-                <Image src={logoPic} />
-              </div>
-            </div>
-            <div className="sign-up-button">
-              <Link href={"/MassageSignUp"}>
-                <Button variant="contained">Записаться на массаж</Button>
-              </Link>
-            </div>
+    <>
+      <IntlProvider locale={locale} messages={messages[locale]}>
+        <MainLayout title={"Юмейхо терапия"}>
+          <div
+          // style={{
+          //   width: innerWidth,
+          //   height: innerHeight,
+          // }}
+          >
+            {/* <Image
+              className="background"
+              src={Background}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="left"
+            /> */}
+            <HomePage locale={locale} dispatch={dispatch} />
           </div>
-        </div>
-        {/* second section */}
-        {/* <div
-          style={{
-            backgroundColor: "green",
-          }}
-        >
-          Second section
-        </div> */}
-      </div>
-    </MainLayout>
+          <Massages />
+          <BottomNavPanel />
+        </MainLayout>
+      </IntlProvider>
+    </>
   );
 }
 
