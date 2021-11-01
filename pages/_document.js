@@ -1,11 +1,24 @@
 import React from "react";
+import Popover from "./PopoverContacts";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheets } from "@material-ui/styles"; // works with @material-ui/core/styles, if you prefer to use it.
 class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head></Head>
+        <Head>
+          {/* ----------------------- */}
+          <link
+            href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+            rel="stylesheet"
+          />
+          <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+          {/* --------------------------- */}
+        </Head>
         <style global jsx>{`
           html,
           body,

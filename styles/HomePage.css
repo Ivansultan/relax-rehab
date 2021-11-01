@@ -2,13 +2,14 @@
   text-align: center;
 }
 
-.container {
+.home-page-container {
   display: flex;
   /* height: inherit; */
   /* overflow: auto; */
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  /* background-color: green; */
 }
 
 
@@ -17,16 +18,15 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* background-color: green; */
-
+  padding-bottom: 20px;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
 }
 
 .title-container {
-  /* background-color: red; */
+  /* background-color: rgb(0, 255, 170); */
   flex-direction: row;
   display: flex;
   text-align: center;
-  /* margin-top: -10px; */
   width: 100%;
   color: rgb(237, 242, 245);
 }
@@ -34,10 +34,6 @@
 .title {
   /* background-color: orange; */
   width: 100%;
-}
-
-.title-second-line {
-  margin-top: -20px;
 }
 
 .languages-container {
@@ -48,6 +44,11 @@
   /* background-color: yellow; */
 } 
 
+.languages {
+  /* background-color: aqua; */
+  width: 15%;
+}
+
 .languages-container-mobile {
   display: flex;
   justify-content: center;
@@ -56,18 +57,14 @@
   color: white;
 }
 
-.languages {
-  /* background-color: aqua; */
-  width: 20%;
-}
-
 .languages-mobile {
     /* background-color: aqua; */
-  width: 20%;
-  height: 25%;
+  font-size: 17px;
+  width: 40px;
   display: flex;
   align-items: center ;
   justify-content: center ;
+  margin-top: -60px;
 }
 
 .logo-mobile-container {
@@ -79,25 +76,115 @@
 }
 
 .logo-mobile {
-  width: 50px;
+  width: 60px;
+  margin-top: 10px;
+  margin-left: -5px;
   display: flex;
   align-items: flex-end;
   /* background-color:yellow */
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
+  .city {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+  .number {
+    display: none;
+  }
+  .social-network {
+    display: none;
+  }
+  .languages-container {
+    display: none;
+  }
+  .massages {
+    display: none;
+  }
+  .results {
+    display: none;
+  }
+  .faq {
+    display: none;
+  }
+  .about-me {
+    display: none;
+  }
+  .reviews {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .logo-title {
+    display: none;
+  }
+  .sign-up-button {
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 767px) {
+  .logo-mobile {
+    display: none;
+  }
+  .logo-mobile-container {
+    display: none;
+  }
+  .languages-mobile {
+    display: none;
+  }
+  .wrapper {
+    display: none;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .bottom-navbar {
+    display: none;
+  }
+  .massages-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo-mobile {
+    width: 60px
+  }
+  .languages-mobile {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 400px) {
   .title {
     font-size: 12px;
   }
-
-  .city {
+  .logo-mobile {
+    width: 45px
+  }
+  .languages-mobile {
     font-size: 15px;
   }
+}
 
-  .languages {
-    font-size:13px
+@media screen and (max-width: 300px) {
+  .title {
+    font-size: 10px;
   }
-  
+  .logo-mobile {
+    width: 40px
+  }
+  .languages-mobile {
+    font-size: 13px;
+  }
 }
 
 
@@ -107,6 +194,7 @@
   display: flex;
   align-items: center ;
   justify-content: center;
+  margin-top: 8px
   /* background-color: red */
 }
 
@@ -129,7 +217,6 @@
 
 .city-container {
   /* background-color: blue; */
-  padding: 5px 0 5px 0;
   display: flex;
   justify-content: flex-start;
 }
@@ -139,20 +226,21 @@
 }
 
 .phone-container {
-  /* background-color: black; */
+  /* background-color: rgb(209, 26, 26); */
   display: flex;
-  
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .phone-icon {
   /* background-color: orange; */
   align-items: center;
   display: flex;
-  padding: 5px 5px 5px 0;
+  padding: 2px 5px 2px 0;
 }
 
 .phone {
-  width: 25px; 
+  width: 20px; 
 }
 
 /* .phone-mobile {
@@ -168,12 +256,12 @@
 .social-network-container {
   display: flex;
   justify-content: flex-start;
-  padding: 5px 0 5px 0;
+  padding: 3px 0 0 0;
   /* background-color: green; */
 }
 
 .social-network {
-  width: 25px;
+  width: 30px;
   padding: 0 10px 0 0;
 }
 
@@ -190,6 +278,7 @@
   align-items: center;
   justify-content: center;
 }
+
 
 .menu-mobile-container {
   /* background-color: purple; */
@@ -218,7 +307,7 @@
 
 .nav-panel {
   display: flex;
-  margin-top: 10px;
+  margin-top: 20px;
   justify-content: space-between; 
 }
 
@@ -239,22 +328,48 @@
   width: 100%;
   display: flex;
   justify-content: center;
-
+  /* background-color: beige; */
 }
 
 .logo {
   width: 250px;
-  margin: -20px;
+  margin-top: 30px;
+  /* margin-right: 28px; */
+  /* background-color: orange; */
 }
 
 .sign-up-button {
   text-align: center;
   width: 100%;
   margin-top: 30px;
+  margin-bottom: 30px;
+  /* margin-left: 28px; */
+  /* display:flex;
+  justify-content: center; */
+  /* background-color: red; */
 }
 
-.sign-up-button-mobile {
-  text-align: center;
-  width: 100%;
-  margin-top: 20px;
+/* .popover-sign {
+  display: "flex"; 
+  justify-content: "space-around";
+} */
+
+.yumeiho {
+  
+   max-width: 370px;
+   border-radius: 5px;
+   float: right;
+   margin-left: 15px;
+   margin-bottom: 15px;
+    
+}
+
+.yumeiho2 {
+  
+   max-width: 200px;
+   border-radius: 5px;
+   float: right;
+   margin-left: 15px;
+   margin-top: 5px;
+  
 }

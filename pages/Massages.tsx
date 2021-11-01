@@ -214,80 +214,85 @@ const Massages = (props: Props) => {
   };
 
   return (
-    <div className={classes.cardsContainer}>
-      {Object.values(massagesData).map((massage, index) => {
-        return (
-          <Card key={index} className={classes.card}>
-            <CardActionArea onClick={() => handleCardInfo(massage)}>
-              <Typography
-                className={classes.title}
-                color="textSecondary"
-                gutterBottom
-              >
-                {massage.title}
-              </Typography>
-
-              <CardMedia className={classes.media} image={massage.images[0]} />
-              <CardContent>
-                <Typography paragraph>{massage.shortDescription}</Typography>
+    <div className="massages-container">
+      <div className={classes.cardsContainer}>
+        {Object.values(massagesData).map((massage, index) => {
+          return (
+            <Card key={index} className={classes.card}>
+              <CardActionArea onClick={() => handleCardInfo(massage)}>
                 <Typography
-                  className={classes.pos}
+                  className={classes.title}
                   color="textSecondary"
-                ></Typography>
-                <Typography variant="body2" component="p">
-                  <br />
-                  {}
+                  gutterBottom
+                >
+                  {massage.title}
                 </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        );
-      })}
 
-      <Modal
-        aria-labelledby="transition-modal-title"
-        aria-describedby="transition-modal-description"
-        className={classes.modal}
-        open={open}
-        onClose={() => handleCardInfo()}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
-      >
-        <Fade in={open}>
-          <div className={classes.paper}>
-            <h2 className={classes.modalTitle} id="transition-modal-title">
-              {activeMassage?.title}
-            </h2>
+                <CardMedia
+                  className={classes.media}
+                  image={massage.images[0]}
+                />
+                <CardContent>
+                  <Typography paragraph>{massage.shortDescription}</Typography>
+                  <Typography
+                    className={classes.pos}
+                    color="textSecondary"
+                  ></Typography>
+                  <Typography variant="body2" component="p">
+                    <br />
+                    {}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          );
+        })}
 
-            <div className={classes.modalDescription}>
-              {activeMassage?.description}
+        <Modal
+          aria-labelledby="transition-modal-title"
+          aria-describedby="transition-modal-description"
+          className={classes.modal}
+          open={open}
+          onClose={() => handleCardInfo()}
+          closeAfterTransition
+          BackdropComponent={Backdrop}
+          BackdropProps={{
+            timeout: 500,
+          }}
+        >
+          <Fade in={open}>
+            <div className={classes.paper}>
+              <h2 className={classes.modalTitle} id="transition-modal-title">
+                {activeMassage?.title}
+              </h2>
+
+              <div className={classes.modalDescription}>
+                {activeMassage?.description}
+              </div>
+
+              <div className={classes.modalImages}>
+                <MasonryLayout images={activeMassage?.images! ?? []} />
+              </div>
+
+              <div>
+                {activeMassage?.extraInfo.map((info) => {
+                  console.log("info", info);
+                  return (
+                    <div className={classes.modalExtraInfo}>
+                      {info.title}
+                      <ol>
+                        {info.items.map((item) => {
+                          return <li>{item}</li>;
+                        })}
+                      </ol>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-
-            <div className={classes.modalImages}>
-              <MasonryLayout images={activeMassage?.images! ?? []} />
-            </div>
-
-            <div>
-              {activeMassage?.extraInfo.map((info) => {
-                console.log("info", info);
-                return (
-                  <div className={classes.modalExtraInfo}>
-                    {info.title}
-                    <ol>
-                      {info.items.map((item) => {
-                        return <li>{item}</li>;
-                      })}
-                    </ol>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </Fade>
-      </Modal>
+          </Fade>
+        </Modal>
+      </div>
     </div>
   );
 };

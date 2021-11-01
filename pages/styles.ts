@@ -13,7 +13,12 @@ export const useStyles = makeStyles((theme) => ({
   title: {
     fontSize: 24,
     textAlign: "center",
+    // fontFamily: "Lato",
+    fontFamily: "Oswald",
   },
+  // shortDescription: {
+  //   fontFamily: "Oswald",
+  // },
   pos: {
     marginBottom: 12,
   },

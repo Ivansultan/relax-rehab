@@ -26,20 +26,21 @@ export default function SimplePopover() {
   const id = open ? "simple-popover" : undefined;
 
   return (
-    <div>
+    <div className="contacts">
       <Button
         style={{
           width: "100%",
-          backgroundColor: "lightgray",
-          opacity: 0.5,
-          color: "black",
+          backgroundColor: "transparent",
+          opacity: 1,
+          color: "white",
+          border: "1px solid white",
         }}
         aria-describedby={id}
-        variant="contained"
+        // variant="contained"
         color="default"
         onClick={handleClick}
       >
-        Контакты
+        <span style={{ fontSize: "medium" }}>Контакты</span>
       </Button>
       <Popover
         id={id}

@@ -9,6 +9,7 @@ import Russian from "../translations/ru.json";
 import English from "../translations/en.json";
 import Ukrainian from "../translations/ua.json";
 import BottomNavPanel from "./BottomNavPanel";
+// import MenuMobile from "./MenuMobile";
 
 type Locale = "en" | "ru" | "ua";
 
@@ -56,7 +57,24 @@ function App() {
   }, []);
 
   if (!_window) {
-    return <div>Loading...</div>;
+    return (
+      <div className="loading">
+        <div className="lds-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    );
   }
 
   const { innerHeight, innerWidth } = _window;
@@ -81,7 +99,7 @@ function App() {
             /> */}
             <HomePage locale={locale} dispatch={dispatch} />
           </div>
-          <Massages />
+
           <BottomNavPanel />
         </MainLayout>
       </IntlProvider>

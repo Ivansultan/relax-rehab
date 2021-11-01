@@ -1,7 +1,26 @@
-export default function FAQ() {
+import BottomNavPanel from "./BottomNavPanel";
+import MainLayout from "./MainLayout";
+import LogoPic from "./Images/logo.png";
+import Image from "next/image";
+import MenuMobile from "./MenuPageMobile";
+
+function FAQ() {
   return (
-    <div>
-      <h3>FAQ</h3>
-    </div>
+    <MainLayout title="Юмейхо терапия / Результаты работ">
+      <div className="header-menu-mobile">
+        <div className="logo-menu-mobile">
+          <Image src={LogoPic} />
+        </div>
+        <div className="title-menu-mobile">
+          <h2>FAQ</h2>
+        </div>
+
+        <MenuMobile />
+
+        <BottomNavPanel />
+      </div>
+    </MainLayout>
   );
 }
+
+export default FAQ;
