@@ -1,7 +1,7 @@
 import MainLayout from "./MainLayout";
 import Link from "next/link";
 
-function MenuPageMobile() {
+function MenuMobile() {
   return (
     <MainLayout title={"Юмейхо терапия / Категории"}>
       <div className="menu-icon-container">
@@ -37,4 +37,4 @@ function MenuPageMobile() {
   );
 }
 
-export default MenuPageMobile;
+export default MenuMobile;

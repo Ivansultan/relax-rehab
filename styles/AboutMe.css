@@ -1,20 +1,20 @@
-/* .header-about-me {
-    display:flex;
-    flex-direction: row;
-   
+.header-about-me {
+    /* display:flex; */
+    /* flex-direction: row; */
+    /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png'); */
 }
 
 .title-about-me {
-    width: 68%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    /* width: 68%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* color: white; */
 }
 
 .logo-about-me {
-    width: 45px;
-    margin-top: 10px;
-    margin-left: 15px;
-} */
+    /* width: 45px; */
+    /* margin-top: 10px; */
+    /* margin-left: 15px; */
+}
 

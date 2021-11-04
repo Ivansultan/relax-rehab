@@ -1,7 +1,7 @@
 import HomePage from "./HomePage";
 import MainLayout from "./MainLayout";
 import React, { useReducer, useState } from "react";
-import Background from "./Images/background.jpeg";
+import Background from "../public/background.jpeg";
 import Image from "next/image";
 import Massages from "./Massages";
 import { IntlProvider } from "react-intl";
@@ -9,6 +9,7 @@ import Russian from "../translations/ru.json";
 import English from "../translations/en.json";
 import Ukrainian from "../translations/ua.json";
 import BottomNavPanel from "./BottomNavPanel";
+import Footer from "./Footer";
 // import MenuMobile from "./MenuMobile";
 
 type Locale = "en" | "ru" | "ua";
@@ -101,6 +102,7 @@ function App() {
           </div>
 
           <BottomNavPanel />
+          <Footer />
         </MainLayout>
       </IntlProvider>
     </>

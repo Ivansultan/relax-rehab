@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/core";
+import { url } from "inspector";
 
 export const useStyles = makeStyles((theme) => ({
   root: {
@@ -54,13 +55,15 @@ export const useStyles = makeStyles((theme) => ({
     maxHeight: "100%",
     flexWrap: "wrap",
     marginTop: 20,
+    backgroundColor: "darkgray",
   },
 
   card: {
     display: "flex",
     justifyContent: "space-around",
     width: 300,
-    marginBottom: 30,
+    marginBottom: 15,
+    marginTop: 15,
     minWidth: 275,
     margin: 5,
     cursor: "pointer",

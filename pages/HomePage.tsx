@@ -10,13 +10,20 @@ import Massages from "./Massages";
 import { languages } from "./index";
 import PopoverSign from "./PopoverSign";
 import AboutYumeiho from "./AboutYumeiho";
-import Background from "./Images/background.jpeg";
+import Background from "../public/background.jpeg";
 
 function HomePage(props) {
   const { locale, dispatch } = props;
   return (
     <>
       <div className="home-page-container">
+        {/* <Image
+          className="background"
+          src={Background}
+          layout="fill"
+          objectFit="cover"
+          objectPosition="left"
+        /> */}
         <div className="header">
           <div className="title-container">
             <Languages locale={locale} dispatch={dispatch} />
@@ -29,7 +36,7 @@ function HomePage(props) {
           <div className="nav-panel">
             <div className="left-section">
               <div className="massages">
-                <Link href={"/Massages"}>
+                <Link href={"/"}>
                   <Button
                     style={{
                       backgroundColor: "transparent",
@@ -45,7 +52,7 @@ function HomePage(props) {
               </div>
 
               <div className="results">
-                <Link href={"/WorkResults"}>
+                <Link href={"/WorkResultsWeb"}>
                   <Button
                     style={{
                       backgroundColor: "transparent",
@@ -53,7 +60,6 @@ function HomePage(props) {
                       color: "whitesmoke",
                       border: "1px solid white",
                     }}
-                    // variant="contained"
                   >
                     <span style={{ fontSize: "medium" }}>Результаты работ</span>
                   </Button>
@@ -61,7 +67,7 @@ function HomePage(props) {
               </div>
 
               <div className="faq">
-                <Link href={"/FAQ"}>
+                <Link href={"/FAQWeb"}>
                   <Button
                     style={{
                       backgroundColor: "transparent",
@@ -79,7 +85,7 @@ function HomePage(props) {
 
             <div className="right-section">
               <div className="about-me">
-                <Link href={"/AboutMe"}>
+                <Link href={"/AboutMeWeb"}>
                   <Button
                     style={{
                       backgroundColor: "transparent",
@@ -95,7 +101,7 @@ function HomePage(props) {
               </div>
 
               <div className="reviews">
-                <Link href={"/Reviews"}>
+                <Link href={"/ReviewsWeb"}>
                   <Button
                     style={{
                       backgroundColor: "transparent",
@@ -113,6 +119,7 @@ function HomePage(props) {
             </div>
           </div>
         </div>
+        {/* <div className="background-for-logo"> */}
         <div className="logo-image">
           <div className="logo-title" style={{ padding: "265px 0 0 0 " }}>
             <h2
@@ -142,21 +149,8 @@ function HomePage(props) {
         </div>
         <div className="sign-up-button">
           <PopoverSign />
-          {/* <DropUpMenu /> */}
-          {/* <Link href={"/MassageSignUp"}>
-            <Button
-              style={{
-                backgroundColor: "transparent",
-                opacity: 1,
-                color: "whitesmoke",
-                border: "1px solid white",
-              }}
-              // variant="contained"
-            >
-              <span style={{ fontSize: "medium" }}>Записаться на массаж</span>
-            </Button>
-          </Link> */}
         </div>
+        {/* </div> */}
 
         <div className="languages-container-mobile">
           {languages.map((language, index) => {

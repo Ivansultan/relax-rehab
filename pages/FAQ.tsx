@@ -1,8 +1,8 @@
 import BottomNavPanel from "./BottomNavPanel";
 import MainLayout from "./MainLayout";
-import LogoPic from "./Images/logo.png";
+import LogoPic from "./Images/logo2.png";
 import Image from "next/image";
-import MenuMobile from "./MenuPageMobile";
+import MenuMobile from "./MenuMobile";
 
 function FAQ() {
   return (

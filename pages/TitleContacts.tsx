@@ -3,7 +3,7 @@ import Button from "@material-ui/core/Button";
 import Image from "next/image";
 import Menu from "./Images/menu2.png";
 import Link from "next/link";
-import MenuPageMobile from "./MenuPageMobile";
+import MenuMobile from "./MenuMobile";
 
 function TitleContacts() {
   return (
@@ -34,7 +34,7 @@ function TitleContacts() {
           />
         </div>
       </div>
-      <MenuPageMobile />
+      <MenuMobile />
     </div>
   );
 }

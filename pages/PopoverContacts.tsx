@@ -57,7 +57,13 @@ export default function SimplePopover() {
         }}
       >
         <Typography className={classes.typography}>
-          Здесь будут мои контакты!
+          <div>
+            <ul>г. Киев</ul>
+            <ul>тел. +38 (093) 110-44-35</ul>
+            <ul>тел. +38 (066) 118-16-08</ul>
+            <ul>Email: jen.solty@gmail.com</ul>
+            <ul>Евгений Солтынчук</ul>
+          </div>
         </Typography>
       </Popover>
     </div>

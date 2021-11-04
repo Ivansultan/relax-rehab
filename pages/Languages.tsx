@@ -2,7 +2,7 @@
 
 import { languages } from "./index";
 import Image from "next/image";
-import LogoPic from "./Images/logo.png";
+import LogoPic from "./Images/logo2.png";
 
 function Languages({ locale, dispatch }) {
   return (

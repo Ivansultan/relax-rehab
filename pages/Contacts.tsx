@@ -2,7 +2,7 @@ import BottomNavPanel from "./BottomNavPanel";
 import MainLayout from "./MainLayout";
 import LogoPic from "./Images/logo.png";
 import Image from "next/image";
-import MenuPageMobile from "./MenuPageMobile";
+import MenuMobile from "./MenuMobile";
 
 function Contacts() {
   return (
@@ -15,7 +15,7 @@ function Contacts() {
           <h2>Контакты</h2>
         </div>
 
-        <MenuPageMobile />
+        <MenuMobile />
 
         <BottomNavPanel />
       </div>
