@@ -1,8 +1,49 @@
-.container-web {
+.container-about-web {
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
 }
 
-.title {
+.title-about-web {
     color: whitesmoke;
     text-align: center;
+}
+
+.about-web {
+    margin-right: 190px;
+}
+
+.my-pic-web {
+    float: left;
+    margin-top: 5px;
+    margin-right: 40px;
+    margin-left:  20px;
+}
+
+.text-about-web {
+  color: lightblue;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
+}
+
+.diplomas-about-web {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.diploma1-img {
+    border-radius: 8px;
+}
+.diploma2-img {
+    border-radius: 8px;
+}
+.diploma3-img {
+    border-radius: 8px;
+}
+.diploma4-img {
+    border-radius: 8px;
+}
+
+.my-img {
+    border-radius: 5px;
 }

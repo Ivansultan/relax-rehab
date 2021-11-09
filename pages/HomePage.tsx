@@ -10,6 +10,7 @@ import Massages from "./Massages";
 import { languages } from "./index";
 import PopoverSign from "./PopoverSign";
 import AboutYumeiho from "./AboutYumeiho";
+// import Link from "react-scroll";
 import Background from "../public/background.jpeg";
 
 function HomePage(props) {
@@ -36,19 +37,23 @@ function HomePage(props) {
           <div className="nav-panel">
             <div className="left-section">
               <div className="massages">
-                <Link href={"/"}>
+                {/* <Link href={"/"}> */}
+
+                <a style={{ textDecoration: "none" }} href="#massages">
                   <Button
                     style={{
+                      // scrollBehavior: "smooth",
                       backgroundColor: "transparent",
                       opacity: 1,
                       color: "whitesmoke",
                       border: "1px solid whitesmoke",
+                      // transition: "all 0.6s ease-in-out",
                     }}
                     // variant="contained"
                   >
                     <span style={{ fontSize: "medium" }}>Массажи</span>
                   </Button>
-                </Link>
+                </a>
               </div>
 
               <div className="results">
@@ -121,8 +126,8 @@ function HomePage(props) {
         </div>
         {/* <div className="background-for-logo"> */}
         <div className="logo-image">
-          <div className="logo-title" style={{ padding: "265px 0 0 0 " }}>
-            <h2
+          <div className="logo-title" style={{ padding: "235px 0 0 0 " }}>
+            <h1
               style={{
                 color: "whitesmoke",
                 fontStyle: "normal",
@@ -130,13 +135,13 @@ function HomePage(props) {
               }}
             >
               Реабилитационный
-            </h2>
+            </h1>
           </div>
           <div className="logo">
             <Image src={logoPic} />
           </div>
-          <div className="logo-title" style={{ padding: "95px 0 0 0 " }}>
-            <h2
+          <div className="logo-title" style={{ padding: "65px 0 0 0 " }}>
+            <h1
               style={{
                 color: "whitesmoke",
                 fontStyle: "normal",
@@ -144,7 +149,7 @@ function HomePage(props) {
               }}
             >
               Расслабляющий
-            </h2>
+            </h1>
           </div>
         </div>
         <div className="sign-up-button">

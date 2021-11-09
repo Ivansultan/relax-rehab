@@ -57,6 +57,7 @@
   align-items: center ;
   width: 50%;
   color: white;
+  background-color: bisque;
 }
 
 .languages-mobile {
@@ -74,6 +75,7 @@
   align-items: center ;
   justify-content: center ;
   width: 50%;
+  /* height: 100%; */
   /* background-color: red; */
 }
 
@@ -86,7 +88,7 @@
   /* background-color:yellow */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .city {
     display: none;
   }
@@ -132,10 +134,14 @@
   .about-yumeiho-container-web {
     display: none;
   }
+ .title {
+
+}
   
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 766px) {
+  
   .logo-mobile {
     display: none;
   }
@@ -252,6 +258,21 @@
   width: 20px; 
 }
 
+.phone-web {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.phone-section-web {
+  display: flex;
+  flex-direction: row;
+}
+
+.phone-container-web {
+  display: flex;
+  flex-direction: column;
+}
+
 /* .phone-mobile {
   width: 30px; 
 } */
@@ -272,6 +293,17 @@
 .social-network {
   width: 30px;
   padding: 0 10px 0 0;
+  cursor: pointer;
+}
+
+.facebook-icon-web {
+  width: 35px;
+  cursor: pointer;
+}
+
+.instagram-icon-web {
+  width: 37px;
+  cursor: pointer;
 }
 
 .instagram-facebook-phone-mobile {
@@ -345,7 +377,7 @@
 
 .logo {
   width: 250px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   /* margin-right: 28px; */
   /* background-color: orange; */
 }
@@ -353,8 +385,8 @@
 .sign-up-button {
   text-align: center;
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 35px;
+  margin-bottom: 60px;
   /* margin-left: 28px; */
   /* display:flex;
   justify-content: center; */

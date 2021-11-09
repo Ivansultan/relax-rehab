@@ -1,24 +1,7 @@
-/* body {
-   opacity: 0.5; 
-   transition: 0.5s;
-} */
-
 .header-menu-mobile {
-    /* display:flex; */
-    /* flex-direction: row; */
-    /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png'); */
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
 }
 
-.title-menu-mobile {
-    /* width: 68%; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* color: white; */
-}
 
-.logo-menu-mobile {
-    /* width: 45px; */
-    /* margin-top: 10px; */
-    /* margin-left: 15px; */
-}
+
+

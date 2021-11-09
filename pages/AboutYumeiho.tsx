@@ -9,7 +9,7 @@ function AboutYumeiho() {
         <h3 className="yumeiho-title">О ЮМЕЙХО ТЕРАПИИ</h3>
         <div className="first-section">
           <div className="yumeiho">
-            <Image src={Yumeiho} />
+            <Image className="img" src={Yumeiho} />
           </div>
           <div className="text">
             <big>
@@ -33,7 +33,7 @@ function AboutYumeiho() {
 
         <div className="second-section">
           <div className="yumeiho2">
-            <Image src={Yumeiho2} />
+            <Image className="img" src={Yumeiho2} />
           </div>
           <div className="text2">
             <big>
@@ -63,7 +63,7 @@ function AboutYumeiho() {
         <h3 className="yumeiho-title-web">О ЮМЕЙХО ТЕРАПИИ</h3>
         <div className="first-section-web">
           <div className="yumeiho-web">
-            <Image src={Yumeiho} />
+            <Image className="img-web" src={Yumeiho} />
           </div>
           <div className="text-container-web">
             <big className="text-web">
@@ -87,7 +87,7 @@ function AboutYumeiho() {
 
         <div className="second-section-web">
           <div className="yumeiho2-web">
-            <Image src={Yumeiho2} />
+            <Image className="img2-web" src={Yumeiho2} />
           </div>
           <div className="text2-container-web">
             <big className="text2-web">

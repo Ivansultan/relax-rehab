@@ -35,7 +35,8 @@ const Massages = (props: Props) => {
     japanese: {
       title: <FormattedMessage id="Japanese" />,
       shortDescription: (
-        <FormattedMessage id="Yumeiho therapy dan 1 (Japanese massage technique) " />
+        // <FormattedMessage id="Yumeiho therapy dan 1 (Japanese massage technique) " />
+        <FormattedMessage id="(45 мин. - 1 час) - 700 грн" />
       ),
       description: (
         <FormattedMessage id="Yumeiho therapy dan 1 (Japanese massage technique) It is based on the body biomechanics and the effect of centere-of-gravity shift of the pelvic bones on human health.Yumeiho therapy includes the whole body lymphatic massage, gentle manual therapy and whole body muscle massage." />
@@ -81,7 +82,8 @@ const Massages = (props: Props) => {
     vietnamese: {
       title: <FormattedMessage id="Vietnamese" />,
       shortDescription: (
-        <FormattedMessage id="Yumeiho therapy dan 2 (Vietnamese massage technique)" />
+        // <FormattedMessage id="Yumeiho therapy dan 2 (Vietnamese massage technique)" />
+        <FormattedMessage id="(45 мин. - 1 час) - 800 грн" />
       ),
       description: (
         <FormattedMessage id="Yumeiho therapy dan 2 (Vietnamese massage technique) This is a system of specially selected compressions, twists and stretches (based on martial arts techniques) aimed at deeply massaging muscles and ligaments, relieving stress from the whole body and increasing the joint range of motions." />
@@ -128,7 +130,8 @@ const Massages = (props: Props) => {
     relaxing: {
       title: <FormattedMessage id="Remedial & Relaxing" />,
       shortDescription: (
-        <FormattedMessage id="Neck-collar area (remedial and relaxing massage)" />
+        // <FormattedMessage id="Neck-collar area (remedial and relaxing massage)" />
+        <FormattedMessage id="(45 мин. - 1 час) - 600 грн" />
       ),
       description: (
         <FormattedMessage id="Neck-collar area massage. It is focused on the muscles around the neck, chest, and shoulder area." />
@@ -159,7 +162,8 @@ const Massages = (props: Props) => {
     visceral: {
       title: <FormattedMessage id="Abdominal" />,
       shortDescription: (
-        <FormattedMessage id="Visceral chiropractic (abdominal massage)" />
+        // <FormattedMessage id="Visceral chiropractic (abdominal massage)" />
+        <FormattedMessage id="(45 мин. - 1 час) - 600 грн" />
       ),
       description: (
         <FormattedMessage id="Visceral chiropractic (abdominal massage) This is a massage technique for influencing internal organs through compression, pounding, kneading, effleurage to recover the correct organ positions and microcirculation around them. It helps to manage a wide range of organ dysfunctions throughout the body." />
@@ -214,7 +218,7 @@ const Massages = (props: Props) => {
   };
 
   return (
-    <div className="massages-container">
+    <div id="massages" className="massages-container">
       <div className={classes.cardsContainer}>
         {Object.values(massagesData).map((massage, index) => {
           return (
@@ -233,7 +237,9 @@ const Massages = (props: Props) => {
                   image={massage.images[0]}
                 />
                 <CardContent>
-                  <Typography paragraph>{massage.shortDescription}</Typography>
+                  <Typography paragraph className={classes.shortDescription}>
+                    {massage.shortDescription}
+                  </Typography>
                   <Typography
                     className={classes.pos}
                     color="textSecondary"

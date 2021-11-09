@@ -15,11 +15,14 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: 24,
     textAlign: "center",
     // fontFamily: "Lato",
-    fontFamily: "Oswald",
+    fontFamily: "  Oswald",
   },
-  // shortDescription: {
-  //   fontFamily: "Oswald",
-  // },
+  shortDescription: {
+    display: "flex",
+    justifyContent: "center",
+    fontFamily: "Oswald",
+    marginBottom: "-20px",
+  },
   pos: {
     marginBottom: 12,
   },
@@ -55,7 +58,9 @@ export const useStyles = makeStyles((theme) => ({
     maxHeight: "100%",
     flexWrap: "wrap",
     marginTop: 20,
-    backgroundColor: "darkgray",
+    // backgroundColor: "darkgray",
+    // background: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png",
+    backgroundColor: "../public/background6.jpg",
   },
 
   card: {

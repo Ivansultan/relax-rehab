@@ -1,8 +1,29 @@
 .container-web {
-    /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png'); */
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
+    
 }
 
 .title {
     color: whitesmoke;
     text-align: center;
+}
+
+.text-faq-web {
+    color: whitesmoke;
+    
+}
+
+.text-web {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.question {
+  color: lightcoral
+}
+
+.answer {
+  color: lightblue
 }
