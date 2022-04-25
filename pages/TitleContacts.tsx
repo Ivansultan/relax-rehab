@@ -27,7 +27,7 @@ function TitleContacts() {
           <Link href="https://www.facebook.com/profile.php?id=100074749413242">
             <img
               className="social-network"
-              src="https://pngicon.ru/file/uploads/FaceBook_512x512.png"
+              src={"https://pngicon.ru/file/uploads/FaceBook_512x512.png"}
             />
           </Link>
           <Link href="https://instagram.com/jenya_massage_kiev?utm_medium=copy_link">

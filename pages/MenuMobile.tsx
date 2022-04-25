@@ -16,19 +16,19 @@ function MenuMobile() {
               <a href="/">Главная</a>
             </li>
             <li>
-              <a href="/WorkResults">Результаты</a>
+              <a href="/WorkResultsMob">Результаты</a>
             </li>
             <li>
-              <a href="/FAQ">FAQ</a>
+              <a href="/FAQMob">FAQ</a>
             </li>
             <li>
-              <a href="/AboutMe">Обо мне</a>
+              <a href="/AboutMeMob">Обо мне</a>
             </li>
             <li>
-              <a href="/Reviews">Отзывы</a>
+              <a href="/ReviewsMob">Отзывы</a>
             </li>
             <li>
-              <a href="/Contacts">Контакты</a>
+              <a href="/ContactsMob">Контакты</a>
             </li>
           </ul>
         </div>

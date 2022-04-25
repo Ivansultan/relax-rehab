@@ -9,10 +9,10 @@ import Russian from "../translations/ru.json";
 import English from "../translations/en.json";
 import Ukrainian from "../translations/ua.json";
 import BottomNavPanel from "./BottomNavPanel";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 // import MenuMobile from "./MenuMobile";
 
-type Locale = "en" | "ru" | "ua";
+type Locale = "en" | "ua" | "ru";
 
 type State = {
   locale: Locale;
@@ -33,8 +33,8 @@ const reducer = (state: State, action: Action) => {
 
 const messages = {
   en: English,
-  ru: Russian,
   ua: Ukrainian,
+  ru: Russian,
 };
 
 type Language = {
@@ -44,12 +44,12 @@ type Language = {
 
 export const languages: Language[] = [
   { name: "EN", locale: "en" },
-  { name: "RU", locale: "ru" },
   { name: "UA", locale: "ua" },
+  { name: "RU", locale: "ru" },
 ];
 
 function App() {
-  const [state, dispatch] = useReducer(reducer, { locale: "ru" });
+  const [state, dispatch] = useReducer(reducer, { locale: "ua" });
   const { locale } = state;
   const [_window, setSize] = useState(undefined);
 
@@ -102,7 +102,7 @@ function App() {
           </div>
 
           <BottomNavPanel />
-          <Footer />
+          {/* <Footer /> */}
         </MainLayout>
       </IntlProvider>
     </>

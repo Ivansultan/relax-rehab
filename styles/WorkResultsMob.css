@@ -1,0 +1,45 @@
+.work-results-container-mobile {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
+}
+
+.menu-header-mobile {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.menu-title-mobile {
+    width: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.menu-logo-mobile {
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.figure img{
+    border-radius: 10px;
+}
+
+.img-section {
+    margin-bottom: 30px;
+}
+
+.img-container {
+    margin-top: 35px;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.line {
+    margin-top: 10px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    /* opacity: 0.7; */
+}
+

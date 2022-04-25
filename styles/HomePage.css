@@ -81,7 +81,7 @@
 
 .logo-mobile {
   width: 60px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-left: -5px;
   display: flex;
   align-items: flex-end;
@@ -134,9 +134,9 @@
   .about-yumeiho-container-web {
     display: none;
   }
- .title {
-
-}
+ .copyrightWeb {
+  display: none;
+ }
   
 }
 
@@ -167,6 +167,9 @@
   .about-yumeiho-container {
     display: none;
   }
+  .copyrightMob {
+    display: none;
+   }
 }
 
 @media screen and (max-width: 500px) {
@@ -400,4 +403,8 @@
 
 .massages-container {
   margin-top: 50px;
+}
+
+.background-massages {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
 }

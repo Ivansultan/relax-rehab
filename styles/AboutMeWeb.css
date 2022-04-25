@@ -2,34 +2,60 @@
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
 }
 
+.text-diplomas {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
+}
+
 .title-about-web {
     color: whitesmoke;
     text-align: center;
 }
 
 .about-web {
-    margin-right: 190px;
+    /* margin-right: 190px; */
+    margin-right: 160px;
+    margin-top: 20px;
+    margin-left:  40px;
 }
 
 .my-pic-web {
     float: left;
     margin-top: 5px;
     margin-right: 40px;
-    margin-left:  20px;
+    /* margin-left:  40px; */
 }
 
 .text-about-web {
   color: lightblue;
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
 }
 
 .diplomas-about-web {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
   display:flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 60px;
 }
+
+@media screen and (min-width: 1497px) {
+    .diplomas-about-web {
+        margin-top: 80px;
+    }
+  }
+@media screen and (min-width: 1648px) {
+    .diplomas-about-web {
+        margin-top: 100px;
+    }
+  }
+@media screen and (min-width: 2014px) {
+    .diplomas-about-web {
+        margin-top: 150px;
+    }
+  }
+@media screen and (min-width: 2217px) {
+    .diplomas-about-web {
+        margin-top: 200px;
+    }
+  }
 
 .diploma1-img {
     border-radius: 8px;

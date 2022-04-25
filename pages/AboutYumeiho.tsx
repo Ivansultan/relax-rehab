@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Yumeiho from "./Images/yumeiho.png";
 import Yumeiho2 from "./Images/yumeiho2.jpg";
+import FooterMob from "./FooterMob";
+import FooterWeb from "./FooterWeb";
 
 function AboutYumeiho() {
   return (
@@ -113,6 +115,8 @@ function AboutYumeiho() {
           </div>
         </div>
       </div>
+      <FooterMob />
+      <FooterWeb />
     </>
   );
 }

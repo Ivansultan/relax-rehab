@@ -1,0 +1,50 @@
+.reviews-container-mobile {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
+}
+
+.menu-header-mobile {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.menu-title-mobile {
+    width: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.menu-logo-mobile {
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#more {
+    display: none;
+}
+
+#btn {
+    color: whitesmoke;
+}
+
+.review-box-mob {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.review-section-mob {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.client-name {
+  color: lightcoral;
+}
+
+.client-review {
+  color: lightblue;
+}

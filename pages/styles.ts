@@ -77,12 +77,14 @@ export const useStyles = makeStyles((theme) => ({
   modalTitle: {
     justifyContent: "center",
     display: "flex",
+    opacity: 0.8,
   },
 
   modalDescription: {
     paddingLeft: 10,
     paddingRight: 10,
     paddingBottom: 20,
+    opacity: 0.8,
   },
 
   modalImages: {
@@ -92,5 +94,6 @@ export const useStyles = makeStyles((theme) => ({
   modalExtraInfo: {
     paddingLeft: 10,
     paddingRight: 10,
+    opacity: 0.8,
   },
 }));

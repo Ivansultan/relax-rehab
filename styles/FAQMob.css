@@ -1,0 +1,49 @@
+.faq-container-mobile {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
+    margin-bottom: 65px;
+}
+
+.menu-header-mobile {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.menu-title-mobile {
+    width: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.menu-logo-mobile {
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.title {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.text-faq-mob {
+    color: whitesmoke;
+    
+}
+
+.text-mob {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.question {
+  color: lightcoral
+}
+
+.answer {
+  color: lightblue
+}

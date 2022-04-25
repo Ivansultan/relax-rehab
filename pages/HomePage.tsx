@@ -185,7 +185,10 @@ function HomePage(props) {
           })}
         </div>
       </div>
-      <Massages />
+      <div className="background-massages">
+        <Massages />
+      </div>
+
       <AboutYumeiho />
     </>
   );

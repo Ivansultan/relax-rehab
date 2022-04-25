@@ -61,7 +61,12 @@ export default function SimplePopover() {
             <ul>г. Киев</ul>
             <ul>тел. +38 (093) 110-44-35</ul>
             <ul>тел. +38 (066) 118-16-08</ul>
-            <ul>Email: jen.solty@gmail.com</ul>
+            <ul>
+              Email:{" "}
+              <a className="email-link" href="mailto:jen.solty@gmail.com">
+                jen.solty@gmail.com
+              </a>
+            </ul>
             <ul>Евгений Солтынчук</ul>
           </div>
         </Typography>

@@ -1,0 +1,55 @@
+.contacts-container-mobile {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
+}
+
+.menu-header-mobile {
+    display:flex;
+    flex-direction: row;
+    /* background-size: cover; */
+}
+
+.menu-title-mobile {
+    width: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.menu-logo-mobile {
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.info-contacts-section {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-bottom: 350px;
+    font-size: 20px;
+    color: white
+}
+
+.email-link {
+    color: lightcoral
+}
+
+.phone-link {
+    color: lightblue
+}
+
+.facebook-icon-mob {
+    width: 35px;
+    cursor: pointer;
+  }
+  
+  .instagram-icon-mob {
+    width: 37px;
+    cursor: pointer;
+    margin-left: -25px;
+  }
+
