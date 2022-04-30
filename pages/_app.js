@@ -17,14 +17,42 @@ import "../styles/ReviewsMob.css";
 import "../styles/AboutMeMob.css";
 import "../styles/FAQMob.css";
 import Head from "next/head";
+import English from "../content/compiled-locales/en.json";
+import Ukrainian from "../content/compiled-locales/ua.json";
+import Russian from "../content/compiled-locales/ru.json";
+import { useRouter } from "next/router";
+import { useMemo } from "react";
+import { IntlProvider, FormattedMessage } from "react-intl";
 
 export default function MyApp({ Component, pageProps }) {
+  const { locale } = useRouter();
+  const [shortLocale] = locale ? locale.split("-") : ["en"];
+
+  const messages = useMemo(() => {
+    switch (shortLocale) {
+      case "ru":
+        return Russian;
+      case "ua":
+        return Ukrainian;
+      case "en":
+        return English;
+      default:
+        return English;
+    }
+  }, [shortLocale]);
   return (
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Component {...pageProps} />
+      <IntlProvider
+        locale={shortLocale}
+        messages={messages}
+        onError={() => null}
+      >
+        {/* <FormattedMessage defaultMessage="текст" /> */}
+        <Component {...pageProps} />
+      </IntlProvider>
     </>
   );
 }

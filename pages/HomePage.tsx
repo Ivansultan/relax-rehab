@@ -12,6 +12,7 @@ import PopoverSign from "./PopoverSign";
 import AboutYumeiho from "./AboutYumeiho";
 // import Link from "react-scroll";
 import Background from "../public/background.jpeg";
+import { FormattedMessage } from "react-intl";
 
 function HomePage(props) {
   const { locale, dispatch } = props;
@@ -29,7 +30,8 @@ function HomePage(props) {
           <div className="title-container">
             <Languages locale={locale} dispatch={dispatch} />
             <div className="title">
-              <h1>Массаж </h1>
+              {/* <h1>Массаж </h1> */}
+              <FormattedMessage defaultMessage="Massage" />
               <h1>Юмейхо терапия</h1>
             </div>
             <TitleContacts />
@@ -155,29 +157,29 @@ function HomePage(props) {
         <div className="sign-up-button">
           <PopoverSign />
         </div>
-        {/* </div> */}
 
         <div className="languages-container-mobile">
           {languages.map((language, index) => {
-            const isActiveLocale = language.locale === locale;
+            // const isActiveLocale = language.locale === locale;
             return (
               <div
-                className="languages-mobile"
-                key={index}
-                style={{
-                  paddingLeft: 10,
-                  cursor: isActiveLocale ? "default" : "pointer",
-                  fontWeight: isActiveLocale ? "bold" : "normal",
-                  textDecoration: isActiveLocale ? "underLine" : "",
-                }}
-                onClick={() => {
-                  if (!isActiveLocale) {
-                    dispatch({
-                      type: "setLocale",
-                      locale: language.locale,
-                    });
-                  }
-                }}
+              // className="languages-mobile"
+              // key={index}
+              // style={{
+              //   paddingLeft: 10,
+              //   cursor: isActiveLocale ? "default" : "pointer",
+              //   fontWeight: isActiveLocale ? "bold" : "normal",
+              //   textDecoration: isActiveLocale ? "underLine" : "",
+              // }}
+              //   onClick={() => {
+              //     if (!isActiveLocale) {
+              //       dispatch({
+              //         type: "setLocale",
+              //         // locale: language.locale,
+              //       });
+              //     }
+              //   }
+              // }
               >
                 {language.name}
               </div>
