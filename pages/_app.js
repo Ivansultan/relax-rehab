@@ -26,7 +26,7 @@ import { IntlProvider, FormattedMessage } from "react-intl";
 
 export default function MyApp({ Component, pageProps }) {
   const { locale } = useRouter();
-  const [shortLocale] = locale ? locale.split(" ") : ["ua"];
+  const [shortLocale] = locale ? locale.split(" ") : ["en"];
 
   const messages = useMemo(() => {
     switch (shortLocale) {
@@ -38,7 +38,8 @@ export default function MyApp({ Component, pageProps }) {
         return Ukrainian;
 
       default:
-        return Ukrainian;
+        English;
+        return;
     }
   }, [shortLocale]);
   return (
