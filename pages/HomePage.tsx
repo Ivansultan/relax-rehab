@@ -15,7 +15,6 @@ import Background from "../public/background.jpeg";
 import { FormattedMessage } from "react-intl";
 
 function HomePage(props) {
-  const { locale, dispatch } = props;
   return (
     <>
       <div className="home-page-container">
@@ -28,11 +27,17 @@ function HomePage(props) {
         /> */}
         <div className="header">
           <div className="title-container">
-            <Languages locale={locale} dispatch={dispatch} />
+            <Languages />
             <div className="title">
-              {/* <h1>Массаж </h1> */}
-              <FormattedMessage defaultMessage="Massage" />
-              <h1>Юмейхо терапия</h1>
+              <h1>
+                <FormattedMessage id="Massage" defaultMessage="Massage" />
+              </h1>
+              <h1>
+                <FormattedMessage
+                  id="Yumeiho therapy"
+                  defaultMessage="Yumeiho therapy"
+                />
+              </h1>
             </div>
             <TitleContacts />
           </div>
@@ -158,34 +163,7 @@ function HomePage(props) {
           <PopoverSign />
         </div>
 
-        <div className="languages-container-mobile">
-          {languages.map((language, index) => {
-            // const isActiveLocale = language.locale === locale;
-            return (
-              <div
-              // className="languages-mobile"
-              // key={index}
-              // style={{
-              //   paddingLeft: 10,
-              //   cursor: isActiveLocale ? "default" : "pointer",
-              //   fontWeight: isActiveLocale ? "bold" : "normal",
-              //   textDecoration: isActiveLocale ? "underLine" : "",
-              // }}
-              //   onClick={() => {
-              //     if (!isActiveLocale) {
-              //       dispatch({
-              //         type: "setLocale",
-              //         // locale: language.locale,
-              //       });
-              //     }
-              //   }
-              // }
-              >
-                {language.name}
-              </div>
-            );
-          })}
-        </div>
+        <div className="languages-container-mobile"></div>
       </div>
       <div className="background-massages">
         <Massages />

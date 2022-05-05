@@ -1,8 +1,14 @@
 {
-  "mPDrxY": [
+  "Massage": [
     {
       "type": 0,
-      "value": "Macaж"
+      "value": "Масаж"
+    }
+  ],
+  "Yumeiho therapy": [
+    {
+      "type": 0,
+      "value": "Юмейхо терапія"
     }
   ]
 }

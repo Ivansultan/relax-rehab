@@ -9,12 +9,14 @@ import Russian from "../translations/ru.json";
 import English from "../translations/en.json";
 import Ukrainian from "../translations/ua.json";
 import BottomNavPanel from "./BottomNavPanel";
+import { useRouter } from "next/router";
+// import Link from "next/link";
 
 type Locale = "en" | "ua" | "ru";
 
-type State = {
-  locale: Locale;
-};
+// type State = {
+//   locale: Locale;
+// };
 
 // type Action = State & {
 //   type: "setLocale";
@@ -29,29 +31,27 @@ type State = {
 //   }
 // };
 
-const messages = {
-  en: English,
-  ua: Ukrainian,
-  ru: Russian,
-};
+// const messages = {
+//   en: English,
+//   ua: Ukrainian,
+//   ru: Russian,
+// };
 
 type Language = {
   name: string;
-  // locale: Locale;
+  locale: Locale;
 };
 
 export const languages: Language[] = [
-  // { name: "EN", locale: "en" },
-  // { name: "UA", locale: "ua" },
-  // { name: "ru", locale: "ru" },
-  { name: "EN" },
-  { name: "UA" },
-  { name: "RU" },
+  { name: "EN", locale: "en" },
+  { name: "UA", locale: "ua" },
+  { name: "RU", locale: "ru" },
 ];
 
 function App() {
   // const [state, dispatch] = useReducer(reducer, { locale: "en" });
   // const { locale } = state;
+  // const router = useRouter();
   const [_window, setSize] = useState(undefined);
 
   React.useEffect(() => {
@@ -85,17 +85,14 @@ function App() {
   return (
     <>
       {/* <IntlProvider locale={locale} messages={messages[locale]}> */}
-      <IntlProvider locale={""}>
-        <MainLayout title={"Юмейхо терапия"}>
-          <div>
-            {/* <HomePage locale={locale} dispatch={dispatch} /> */}
-            <HomePage />
-          </div>
-
-          <BottomNavPanel />
-          {/* <Footer /> */}
-        </MainLayout>
-      </IntlProvider>
+      <MainLayout title={"Юмейхо терапия"}>
+        <div>
+          {/* <HomePage locale={locale} dispatch={dispatch} /> */}
+          <HomePage />
+        </div>
+        <BottomNavPanel />
+      </MainLayout>
+      {/* </IntlProvider> */}
     </>
   );
 }

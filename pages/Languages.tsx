@@ -3,34 +3,32 @@
 import { languages } from "./index";
 import Image from "next/image";
 import LogoPic from "./Images/logo2.png";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
-function Languages({ locale, dispatch }) {
+const Languages = () => {
+  const { locale } = useRouter();
   return (
     <>
       <div className="languages-container">
         {languages.map((language, index) => {
           const isActiveLocale = language.locale === locale;
           return (
-            <div
-              className="languages"
-              key={index}
-              style={{
-                paddingLeft: 10,
-                cursor: isActiveLocale ? "default" : "pointer",
-                fontWeight: isActiveLocale ? "bold" : "normal",
-                textDecoration: isActiveLocale ? "underLine" : "",
-              }}
-              onClick={() => {
-                if (!isActiveLocale) {
-                  dispatch({
-                    type: "setLocale",
-                    locale: language.locale,
-                  });
-                }
-              }}
-            >
-              {language.name}
-            </div>
+            <Link href="/" locale={language.locale}>
+              <a
+                className="languages"
+                key={index}
+                style={{
+                  paddingLeft: 10,
+                  color: isActiveLocale ? "lightgreen" : "whitesmoke",
+                  cursor: isActiveLocale ? "default" : "pointer",
+                  // fontWeight: isActiveLocale ? "bold" : "normal",
+                  textDecoration: isActiveLocale ? "" : "underLine",
+                }}
+              >
+                {language.name}
+              </a>
+            </Link>
           );
         })}
       </div>
@@ -42,6 +40,6 @@ function Languages({ locale, dispatch }) {
       </div>
     </>
   );
-}
+};
 
 export default Languages;
