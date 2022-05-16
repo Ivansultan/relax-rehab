@@ -1,8 +1,8 @@
-.container-web {
+.work-results-container-web {
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
 }
 
-.title {
+.work-results-title {
     color: whitesmoke;
     text-align: center;
 }
@@ -13,6 +13,7 @@
     display:flex;
     justify-content: space-around;
     margin-top: 25px;
+    visibility: visible;
     /*Add a height attribute and set to largest image's height to prevent overlaying*/
     }
     
@@ -33,11 +34,13 @@
     .thumbnail span{ /*CSS for enlarged image*/
     position: absolute;
     visibility: hidden;
+   
     }
     
     .thumbnail span img{ /*CSS for enlarged image*/
     border-width: 0;
     padding: 2px;
+
     }
     
     .thumbnail:hover span{ /*CSS for enlarged image*/
@@ -45,10 +48,10 @@
     top: 130px;
     /* left: 500px; position where enlarged image should offset horizontally */
     z-index: 50;
-    
+
     }
 
-    @media screen and (max-width: 1500px) {
+    /* @media screen and (max-width: 1500px) {
         .thumbnail:hover span {
             left: 500px;
         }
@@ -247,4 +250,4 @@
         .thumbnail:hover span {
             left: 13px;
         }
-    }
+    } */

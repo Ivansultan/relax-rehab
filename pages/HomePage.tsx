@@ -13,8 +13,12 @@ import AboutYumeiho from "./AboutYumeiho";
 // import Link from "react-scroll";
 import Background from "../public/background.jpeg";
 import { FormattedMessage } from "react-intl";
+import { useRouter } from "next/router";
+import LogoPic from "./Images/logo2.png";
 
-function HomePage(props) {
+const HomePage = () => {
+  const { locale } = useRouter();
+
   return (
     <>
       <div className="home-page-container">
@@ -26,21 +30,58 @@ function HomePage(props) {
           objectPosition="left"
         /> */}
         <div className="header">
-          <div className="title-container">
-            <Languages />
-            <div className="title">
-              <h1>
-                <FormattedMessage id="Massage" defaultMessage="Massage" />
-              </h1>
-              <h1>
-                <FormattedMessage
-                  id="Yumeiho therapy"
-                  defaultMessage="Yumeiho therapy"
-                />
-              </h1>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              textAlign: "center",
+            }}
+          >
+            <div className="title-container">
+              <Languages />
+              <div className="main-title">
+                <h1>
+                  {/* <big> */}
+                  <FormattedMessage id="Massage" defaultMessage="Massage" />
+                  {/* </big> */}
+                </h1>
+                <h1>
+                  {/* <big> */}
+                  <FormattedMessage
+                    id="Yumeiho therapy"
+                    defaultMessage="Yumeiho therapy"
+                  />
+                  {/* </big> */}
+                </h1>
+                {/* <div style={{ marginTop: "10px" }}> */}
+                <div className="languages-container-mobile">
+                  {languages.map((language, index) => {
+                    const isActiveLocale = language.locale === locale;
+                    return (
+                      <Link href="/" locale={language.locale}>
+                        <a
+                          className="languages-mobile"
+                          key={index}
+                          style={{
+                            paddingLeft: 10,
+                            color: isActiveLocale ? "lightgreen" : "whitesmoke",
+                            cursor: isActiveLocale ? "default" : "pointer",
+                            // fontWeight: isActiveLocale ? "bold" : "normal",
+                            textDecoration: isActiveLocale ? "" : "none",
+                          }}
+                        >
+                          {language.name}
+                        </a>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <TitleContacts />
             </div>
-            <TitleContacts />
           </div>
+
           <div className="nav-panel">
             <div className="left-section">
               <div className="massages">
@@ -172,6 +213,6 @@ function HomePage(props) {
       <AboutYumeiho />
     </>
   );
-}
+};
 
 export default HomePage;

@@ -23,7 +23,7 @@ const Languages = () => {
                   color: isActiveLocale ? "lightgreen" : "whitesmoke",
                   cursor: isActiveLocale ? "default" : "pointer",
                   // fontWeight: isActiveLocale ? "bold" : "normal",
-                  textDecoration: isActiveLocale ? "" : "underLine",
+                  textDecoration: isActiveLocale ? "" : "none",
                 }}
               >
                 {language.name}
@@ -32,6 +32,10 @@ const Languages = () => {
           );
         })}
       </div>
+
+      {/* <div className="languages-container-mobile"> */}
+
+      {/* </div> */}
 
       <div className="logo-mobile-container">
         <div className="logo-mobile">

@@ -21,7 +21,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  margin-bottom: -10px;
 }
 
 .title-container {
@@ -31,11 +31,19 @@
   text-align: center;
   width: 100%;
   color: rgb(237, 242, 245);
+  /* margin-bottom: -10px; */
+}
+
+.main-title {
+  /* background-color: rgb(0, 255, 251); */
+  width: 100%;
+  margin-top: 10px;
 }
 
 .title {
   /* background-color: orange; */
   width: 100%;
+  margin-top: 10px;
 }
 
 .languages-container {
@@ -55,19 +63,27 @@
   display: flex;
   justify-content: center;
   align-items: center ;
-  width: 50%;
-  color: white;
-  background-color: bisque;
+  /* width: 70%; */
+  /* margin-left: 25px; */
+  /* background-color: bisque; */
 }
 
 .languages-mobile {
-    /* background-color: aqua; */
-  font-size: 17px;
-  width: 40px;
-  display: flex;
-  align-items: center ;
+  /* width: 50%; */
+  margin-top: 15px;
+  /* background-color: rgb(13, 42, 6); */
+  width: 20%;
+
+  /* height: min-content; */
+  /* display: flex;
+  justify-content: space-around; */
+  /* align-items: flex-end; ; */
+  /* font-size: 17px; */
+  /* width: 40px; */
+  /* 
+  
   justify-content: center ;
-  margin-top: -50px;
+  margin-top: -50px; */
 }
 
 .logo-mobile-container {
@@ -75,20 +91,22 @@
   align-items: center ;
   justify-content: center ;
   width: 50%;
+  /* margin-top: 10px; */
+  /* margin-bottom: -10px; */
   /* height: 100%; */
   /* background-color: red; */
 }
 
 .logo-mobile {
-  width: 60px;
-  /* margin-top: 10px; */
-  margin-left: -5px;
-  display: flex;
-  align-items: flex-end;
-  /* background-color:yellow */
+  margin-top: 10px;
+  /* margin-left: -5px; */
+  /* display: flex; */
+  /* align-items: flex-end; */
+  /* width: 80%; */
+  /* background-color:yellow; */
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
   .city {
     display: none;
   }
@@ -104,6 +122,11 @@
   .languages-container {
     display: none;
   }
+  
+  .languages {
+    display: none;
+  }
+
   .massages {
     display: none;
   }
@@ -137,17 +160,25 @@
  .copyrightWeb {
   display: none;
  }
+ .title-container {
+  margin-bottom: -30px;
+}
   
 }
 
-@media screen and (min-width: 766px) {
-  
+@media screen and (min-width: 767px) {
+  .main-title {
+    font-size: 16px;
+  }
   .logo-mobile {
     display: none;
   }
   .logo-mobile-container {
     display: none;
   }
+  /* .languages-container-mobile {
+    display: none;
+  } */
   .languages-mobile {
     display: none;
   }
@@ -172,12 +203,46 @@
    }
 }
 
-@media screen and (max-width: 500px) {
-  .logo-mobile {
-    width: 60px
-  }
+/* @media screen and (max-width: 500px) {
+  
   .languages-mobile {
-    font-size: 17px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 490px) {
+  .languages-mobile {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .languages-mobile {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 470px) {
+  .languages-mobile {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 460px) {
+  .languages-mobile {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .languages-mobile {
+    margin-left: 10px;
+  }
+} */
+
+@media screen and (min-width: 401px) {
+  .logo-mobile {
+    width: 102px;
   }
 }
 
@@ -185,20 +250,30 @@
   .title {
     font-size: 12px;
   }
-  .logo-mobile {
+  /* .logo-mobile-container {
+    max-width: 40px
+  } */
+  /* .logo-mobile {
     width: 45px
-  }
+  } */
   .languages-mobile {
     font-size: 15px;
   }
+  .main-title {
+    font-size: 13px;
+  }
 }
+
+@media screen and (max-width: 308px){
+  .main-title {
+    font-size: 10px;
+  }
+}
+
 
 @media screen and (max-width: 300px) {
   .title {
     font-size: 10px;
-  }
-  .logo-mobile {
-    width: 40px
   }
   .languages-mobile {
     font-size: 13px;
@@ -314,11 +389,11 @@
 }
 
 .menu-icon-container {
-  /* background-color: blue; */
+  /* background: blue; */
   display: flex;
   /* flex-direction: column; */
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  /* height: 100%; */
   align-items: center;
   justify-content: center;
 }
@@ -343,15 +418,14 @@
 
 } */
 
-.btn-menu {
+/* .menu-btn {
   width: 60px; 
   height: 40px; 
-  /* margin: 179.9px 0px; */
-}
+} */
 
 .nav-panel {
   display: flex;
-  margin-top: 20px;
+  margin-top: 30px;
   justify-content: space-between; 
 }
 
@@ -376,6 +450,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 20px
 }
 
 .logo {
@@ -402,7 +477,7 @@
 } */
 
 .massages-container {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .background-massages {

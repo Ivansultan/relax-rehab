@@ -16,6 +16,8 @@ import "../styles/ContactsMob.css";
 import "../styles/ReviewsMob.css";
 import "../styles/AboutMeMob.css";
 import "../styles/FAQMob.css";
+import "../styles/Carousel.css";
+// import "../styles/MenuMobile.css";
 import Head from "next/head";
 import English from "../content/compiled-locales/en.json";
 import Ukrainian from "../content/compiled-locales/ua.json";
@@ -30,15 +32,15 @@ export default function MyApp({ Component, pageProps }) {
 
   const messages = useMemo(() => {
     switch (shortLocale) {
-      case "ru":
-        return Russian;
       case "en":
         return English;
       case "ua":
         return Ukrainian;
+      case "ru":
+        return Russian;
 
       default:
-        English;
+        Ukrainian;
         return;
     }
   }, [shortLocale]);

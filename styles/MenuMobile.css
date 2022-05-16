@@ -23,14 +23,14 @@
     right:0;
   }
   .menu-btn {
-    margin-top: -7px;
+    margin-top: -18px;
     position: absolute;
     z-index: 2;
     right: 20px;
     /*left: 20px; */
     top: 20px;
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
@@ -38,6 +38,7 @@
     cursor: pointer;
     /*color: #fff;*/
     transition: all 0.3s ease-in-out;
+    /* background:#1a73e8; */
   }
   .menu-btn span,
   .menu-btn:before,
@@ -161,4 +162,14 @@
      transition-delay: .6s;
     transform: translateX(-100px);
   }
+
+  @media screen and (max-width: 308px){
+    
+    .menu-btn {
+      height: 55px;
+      width: 55px;
+      margin-right: -12px;
+    }
+  }
+
   
