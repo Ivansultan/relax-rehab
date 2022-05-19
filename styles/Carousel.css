@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png'); */
   }
   
   .slider {
@@ -29,7 +30,7 @@
     border-radius: 10px;
   } */
   .slides::-webkit-scrollbar-track {
-    background: transparent;
+    /* background: transparent; */
   }
   .slides > div {
     scroll-snap-align: start;
@@ -86,7 +87,7 @@
   }
   
   .work-results-container-web {
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
+    /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png'); */
 }
 
 .work-results-title {

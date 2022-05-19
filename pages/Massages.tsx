@@ -33,13 +33,19 @@ type Props = {};
 const Massages = (props: Props) => {
   const massagesData: MassageList = {
     japanese: {
-      title: <FormattedMessage id="Japanese" />,
+      title: <FormattedMessage id="Japanese" defaultMessage="Japanese" />,
       shortDescription: (
         // <FormattedMessage id="Yumeiho therapy dan 1 (Japanese massage technique) " />
-        <FormattedMessage id="(45 мин. - 1 час) - 800 грн" />
+        <FormattedMessage
+          id="(45 min. - 1 hour) - 800 UAH"
+          defaultMessage="(45 min. - 1 hour) - 800 UAH"
+        />
       ),
       description: (
-        <FormattedMessage id="Yumeiho therapy dan 1 (Japanese massage technique) It is based on the body biomechanics and the effect of centere-of-gravity shift of the pelvic bones on human health.Yumeiho therapy includes the whole body lymphatic massage, gentle manual therapy and whole body muscle massage." />
+        <FormattedMessage
+          id="Yumeiho therapy dan 1 (Japanese massage technique) It is based on the body biomechanics and the effect of centere-of-gravity shift of the pelvic bones on human health.Yumeiho therapy includes the whole body lymphatic massage, gentle manual therapy and whole body muscle massage."
+          defaultMessage="Yumeiho therapy dan 1 (Japanese massage technique) It is based on the body biomechanics and the effect of centere-of-gravity shift of the pelvic bones on human health.Yumeiho therapy includes the whole body lymphatic massage, gentle manual therapy and whole body muscle massage."
+        />
       ),
       images: [
         "/japanese1.jpg",
@@ -50,43 +56,93 @@ const Massages = (props: Props) => {
       extraInfo: [
         {
           title: (
-            <FormattedMessage id="Applying these two techniques systematically and comprehensively (Yumeiho therapy dan 1,2), such problems are solved as:" />
+            <FormattedMessage
+              id="Applying these two techniques systematically and comprehensively (Yumeiho therapy dan 1,2), such problems are solved as:"
+              defaultMessage="Applying these two techniques systematically and comprehensively (Yumeiho therapy dan 1,2), such problems are solved as:"
+            />
           ),
           items: [
-            <FormattedMessage id="Headaches" />,
-            <FormattedMessage id="Painful menstruation" />,
-            <FormattedMessage id="Neck, back, lumbar pain" />,
-            <FormattedMessage id="Increased fatigability" />,
-            <FormattedMessage id="Poor sleep quality" />,
-            <FormattedMessage id="Scoliosis" />,
-            <FormattedMessage id="Joint pain" />,
-            <FormattedMessage id="Hyper and hypotension" />,
-            <FormattedMessage id="Digestive disorders" />,
+            <FormattedMessage id="Headaches" defaultMessage="Headaches" />,
+            <FormattedMessage
+              id="Painful menstruation"
+              defaultMessage="Painful menstruation"
+            />,
+            <FormattedMessage
+              id="Neck, back, lumbar pain"
+              defaultMessage="Neck, back, lumbar pain"
+            />,
+            <FormattedMessage
+              id="Increased fatigability"
+              defaultMessage="Increased fatigability"
+            />,
+            <FormattedMessage
+              id="Poor sleep quality"
+              defaultMessage="Poor sleep quality"
+            />,
+            <FormattedMessage id="Scoliosis" defaultMessage="Scoliosis" />,
+            <FormattedMessage id="Joint pain" defaultMessage="Joint pain" />,
+            <FormattedMessage
+              id="Hyper and hypotension"
+              defaultMessage="Hyper and hypotension"
+            />,
+            <FormattedMessage
+              id="Digestive disorders"
+              defaultMessage="Digestive disorders"
+            />,
           ],
         },
         {
-          title: <FormattedMessage id="It improves:" />,
+          title: (
+            <FormattedMessage id="It improves:" defaultMessage="It improves" />
+          ),
           items: [
-            <FormattedMessage id="Work productivity" />,
-            <FormattedMessage id="Tissue regeneration" />,
-            <FormattedMessage id="The immune system, which is fortified" />,
-            <FormattedMessage id="Metabolism, which is normalized" />,
-            <FormattedMessage id="Disease prevention" />,
-            <FormattedMessage id="Sexual desire" />,
-            <FormattedMessage id="Posture" />,
-            <FormattedMessage id="Circulation throughout the body" />,
+            <FormattedMessage
+              id="Work productivity"
+              defaultMessage="Work productivity"
+            />,
+            <FormattedMessage
+              id="Tissue regeneration"
+              defaultMessage="Tissue regeneration"
+            />,
+            <FormattedMessage
+              id="The immune system, which is fortified"
+              defaultMessage="The immune system, which is fortified"
+            />,
+            <FormattedMessage
+              id="Metabolism, which is normalized"
+              defaultMessage="Metabolism, which is normalized"
+            />,
+            <FormattedMessage
+              id="Disease prevention"
+              defaultMessage="Disease prevention"
+            />,
+            <FormattedMessage
+              id="Sexual desire"
+              defaultMessage="Sexual desire"
+            />,
+            <FormattedMessage id="Posture" defaultMessage="Posture" />,
+            <FormattedMessage
+              id="Circulation throughout the body"
+              defaultMessage="Circulation throughout the body"
+            />,
           ],
         },
       ],
     },
     vietnamese: {
-      title: <FormattedMessage id="Vietnamese" />,
+      title: <FormattedMessage id="Vietnamese" defaultMessage="Vietnamese" />,
       shortDescription: (
         // <FormattedMessage id="Yumeiho therapy dan 2 (Vietnamese massage technique)" />
-        <FormattedMessage id="(45 мин. - 1 час) - 800 грн" />
+        <FormattedMessage
+          id="(45 min. - 1 hour) - 800 UAH"
+          defaultMessage="(45 min. - 1 hour) - 800 UAH"
+        />
       ),
       description: (
-        <FormattedMessage id="Yumeiho therapy dan 2 (Vietnamese massage technique) This is a system of specially selected compressions, twists and stretches (based on martial arts techniques) aimed at deeply massaging muscles and ligaments, relieving stress from the whole body and increasing the joint range of motions." />
+        <FormattedMessage
+          id="Yumeiho therapy dan 2 (Vietnamese massage technique) This is a system of specially selected compressions, twists and stretches (based on martial arts techniques) aimed at deeply massaging muscles and ligaments, relieving stress from the whole body and increasing the joint range of motions."
+          defaultMessage="Yumeiho therapy dan 2 (Vietnamese massage technique) This is a system of specially selected compressions, twists and stretches (based on martial arts techniques) aimed at deeply massaging muscles and ligaments, relieving stress from the whole body and increasing the joint range of motions."
+        />
       ),
       images: [
         "/Vietnamese1.jpg",
@@ -98,43 +154,98 @@ const Massages = (props: Props) => {
       extraInfo: [
         {
           title: (
-            <FormattedMessage id="Applying these two techniques systematically and comprehensively (Yumeiho therapy dan 1,2), such problems are solved as:" />
+            <FormattedMessage
+              id="Applying these two techniques systematically and comprehensively (Yumeiho therapy dan 1,2), such problems are solved as:"
+              defaultMessage="Applying these two techniques systematically and comprehensively (Yumeiho therapy dan 1,2), such problems are solved as:"
+            />
           ),
           items: [
-            <FormattedMessage id="Headaches" />,
-            <FormattedMessage id="Painful menstruation" />,
-            <FormattedMessage id="Neck, back, lumbar pain" />,
-            <FormattedMessage id="Increased fatigability" />,
-            <FormattedMessage id="Poor sleep quality" />,
-            <FormattedMessage id="Scoliosis" />,
-            <FormattedMessage id="Joint pain" />,
-            <FormattedMessage id="Hyper and hypotension" />,
-            <FormattedMessage id="Digestive disorders" />,
+            <FormattedMessage id="Headaches" defaultMessage="Headaches" />,
+            <FormattedMessage
+              id="Painful menstruation"
+              defaultMessage="Painful menstruation"
+            />,
+            <FormattedMessage
+              id="Neck, back, lumbar pain"
+              defaultMessage="Neck, back, lumbar pain"
+            />,
+            <FormattedMessage
+              id="Increased fatigability"
+              defaultMessage="Increased fatigability"
+            />,
+            <FormattedMessage
+              id="Poor sleep quality"
+              defaultMessage="Poor sleep quality"
+            />,
+            <FormattedMessage id="Scoliosis" defaultMessage="Scoliosis" />,
+            <FormattedMessage id="Joint pain" defaultMessage="Joint pain" />,
+            <FormattedMessage
+              id="Hyper and hypotension"
+              defaultMessage="Hyper and hypotension"
+            />,
+            <FormattedMessage
+              id="Digestive disorders"
+              defaultMessage="Digestive disorders"
+            />,
           ],
         },
         {
-          title: <FormattedMessage id="It improves:" />,
+          title: (
+            <FormattedMessage id="It improves:" defaultMessage="It improves:" />
+          ),
           items: [
-            <FormattedMessage id="Work productivity" />,
-            <FormattedMessage id="Tissue regeneration" />,
-            <FormattedMessage id="The immune system, which is fortified" />,
-            <FormattedMessage id="Metabolism, which is normalized" />,
-            <FormattedMessage id="Disease prevention" />,
-            <FormattedMessage id="Sexual desire" />,
-            <FormattedMessage id="Posture" />,
-            <FormattedMessage id="Circulation throughout the body" />,
+            <FormattedMessage
+              id="Work productivity"
+              defaultMessage="Work productivity"
+            />,
+            <FormattedMessage
+              id="Tissue regeneration"
+              defaultMessage="Tissue regeneration"
+            />,
+            <FormattedMessage
+              id="The immune system, which is fortified"
+              defaultMessage="The immune system, which is fortified"
+            />,
+            <FormattedMessage
+              id="Metabolism, which is normalized"
+              defaultMessage="Metabolism, which is normalized"
+            />,
+            <FormattedMessage
+              id="Disease prevention"
+              defaultMessage="Disease prevention"
+            />,
+            <FormattedMessage
+              id="Sexual desire"
+              defaultMessage="Sexual desire"
+            />,
+            <FormattedMessage id="Posture" defaultMessage="Posture" />,
+            <FormattedMessage
+              id="Circulation throughout the body"
+              defaultMessage="Circulation throughout the body"
+            />,
           ],
         },
       ],
     },
     relaxing: {
-      title: <FormattedMessage id="Remedial & Relaxing" />,
+      title: (
+        <FormattedMessage
+          id="Remedial & Relaxing"
+          defaultMessage="Remedial & Relaxing"
+        />
+      ),
       shortDescription: (
         // <FormattedMessage id="Neck-collar area (remedial and relaxing massage)" />
-        <FormattedMessage id="(45 мин. - 1 час) - 500 грн" />
+        <FormattedMessage
+          id="(45 min. - 1 hour) - 500 UAH"
+          defaultMessage="(45 min. - 1 hour) - 500 UAH"
+        />
       ),
       description: (
-        <FormattedMessage id="Neck-collar area massage. It is focused on the muscles around the neck, chest, and shoulder area." />
+        <FormattedMessage
+          id="Neck-collar area massage. It is focused on the muscles around the neck, chest, and shoulder area."
+          defaultMessage="Neck-collar area massage. It is focused on the muscles around the neck, chest, and shoulder area."
+        />
       ),
       images: [
         "/relaxing1.jpg",
@@ -147,26 +258,56 @@ const Massages = (props: Props) => {
         {
           title: "",
           items: [
-            <FormattedMessage id="Relaxes the muscles of the neck and collar area" />,
-            <FormattedMessage id="Improves blood circulation and metabolism in the cervical spine." />,
-            <FormattedMessage id="Accelerates the lymph drainage" />,
-            <FormattedMessage id="Improves the cerebral circulation" />,
-            <FormattedMessage id="Relieves pain in the head, neck, and back area" />,
-            <FormattedMessage id="Eliminates tight and stiff muscles" />,
-            <FormattedMessage id="Normalizes sleep" />,
-            <FormattedMessage id="Improves the nervous system function" />,
+            <FormattedMessage
+              id="Relaxes the muscles of the neck and collar area"
+              defaultMessage="Relaxes the muscles of the neck and collar area"
+            />,
+            <FormattedMessage
+              id="Improves blood circulation and metabolism in the cervical spine."
+              defaultMessage="Improves blood circulation and metabolism in the cervical spine."
+            />,
+            <FormattedMessage
+              id="Accelerates the lymph drainage"
+              defaultMessage="Accelerates the lymph drainage"
+            />,
+            <FormattedMessage
+              id="Improves the cerebral circulation"
+              defaultMessage="Improves the cerebral circulation"
+            />,
+            <FormattedMessage
+              id="Relieves pain in the head, neck, and back area"
+              defaultMessage="Relieves pain in the head, neck, and back area"
+            />,
+            <FormattedMessage
+              id="Eliminates tight and stiff muscles"
+              defaultMessage="Eliminates tight and stiff muscles"
+            />,
+            <FormattedMessage
+              id="Normalizes sleep"
+              defaultMessage="Normalizes sleep"
+            />,
+            <FormattedMessage
+              id="Improves the nervous system function"
+              defaultMessage="Improves the nervous system function"
+            />,
           ],
         },
       ],
     },
     visceral: {
-      title: <FormattedMessage id="Abdominal" />,
+      title: <FormattedMessage id="Abdominal" defaultMessage="Abdominal" />,
       shortDescription: (
         // <FormattedMessage id="Visceral chiropractic (abdominal massage)" />
-        <FormattedMessage id="(45 мин. - 1 час) - 500 грн" />
+        <FormattedMessage
+          id="(45 min. - 1 hour) - 500 UAH"
+          defaultMessage="(45 min. - 1 hour) - 500 UAH"
+        />
       ),
       description: (
-        <FormattedMessage id="Visceral chiropractic (abdominal massage) This is a massage technique for influencing internal organs through compression, pounding, kneading, effleurage to recover the correct organ positions and microcirculation around them. It helps to manage a wide range of organ dysfunctions throughout the body." />
+        <FormattedMessage
+          id="Visceral chiropractic (abdominal massage) This is a massage technique for influencing internal organs through compression, pounding, kneading, effleurage to recover the correct organ positions and microcirculation around them. It helps to manage a wide range of organ dysfunctions throughout the body."
+          defaultMessage="Visceral chiropractic (abdominal massage) This is a massage technique for influencing internal organs through compression, pounding, kneading, effleurage to recover the correct organ positions and microcirculation around them. It helps to manage a wide range of organ dysfunctions throughout the body."
+        />
       ),
       images: [
         "/visceral1.jpg",
@@ -177,24 +318,61 @@ const Massages = (props: Props) => {
 
       extraInfo: [
         {
-          title: <FormattedMessage id="Abdominal massage eliminates:" />,
+          title: (
+            <FormattedMessage
+              id="Abdominal massage eliminates:"
+              defaultMessage="Abdominal massage eliminates:"
+            />
+          ),
           items: [
-            <FormattedMessage id="Gastrointestinal tract dysfunctions" />,
-            <FormattedMessage id="Kidney pathologies" />,
-            <FormattedMessage id="Reproductive system disorders in men and women" />,
-            <FormattedMessage id="Poor blood circulation" />,
-            <FormattedMessage id="Respiratory diseases" />,
-            <FormattedMessage id="Pancreatitis, the liver and gallbladder dysfunctions." />,
+            <FormattedMessage
+              id="Gastrointestinal tract dysfunctions"
+              defaultMessage="Gastrointestinal tract dysfunctions"
+            />,
+            <FormattedMessage
+              id="Kidney pathologies"
+              defaultMessage="Kidney pathologies"
+            />,
+            <FormattedMessage
+              id="Reproductive system disorders in men and women"
+              defaultMessage="Reproductive system disorders in men and women"
+            />,
+            <FormattedMessage
+              id="Poor blood circulation"
+              defaultMessage="Poor blood circulation"
+            />,
+            <FormattedMessage
+              id="Respiratory diseases"
+              defaultMessage="Respiratory diseases"
+            />,
+            <FormattedMessage
+              id="Pancreatitis, the liver and gallbladder dysfunctions."
+              defaultMessage="Pancreatitis, the liver and gallbladder dysfunctions."
+            />,
           ],
         },
         {
-          title: <FormattedMessage id="It improves:" />,
+          title: (
+            <FormattedMessage id="It improves:" defaultMessage="It improves:" />
+          ),
           items: [
-            <FormattedMessage id="The cardiovascular system function" />,
-            <FormattedMessage id="Metabolism" />,
-            <FormattedMessage id="Corrects overweight" />,
-            <FormattedMessage id="Psychoemotional state" />,
-            <FormattedMessage id="Catarrhal diseases prevention and immune system stimulation." />,
+            <FormattedMessage
+              id="The cardiovascular system function"
+              defaultMessage="The cardiovascular system function"
+            />,
+            <FormattedMessage id="Metabolism" defaultMessage="Metabolism" />,
+            <FormattedMessage
+              id="Corrects overweight"
+              defaultMessage="Corrects overweight"
+            />,
+            <FormattedMessage
+              id="Psychoemotional state"
+              defaultMessage="Psychoemotional state"
+            />,
+            <FormattedMessage
+              id="Catarrhal diseases prevention and immune system stimulation."
+              defaultMessage="Catarrhal diseases prevention and immune system stimulation."
+            />,
           ],
         },
       ],

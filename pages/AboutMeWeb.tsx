@@ -8,6 +8,7 @@ import Diploma3 from "../public/diploma3.jpg";
 import Diploma4 from "../public/diploma4.jpg";
 import Footer from "./FooterMob";
 import Diplomas from "./Diplomas";
+import { FormattedMessage } from "react-intl";
 
 function AboutMeWeb() {
   return (
@@ -22,10 +23,14 @@ function AboutMeWeb() {
               border: "1px solid whitesmoke",
             }}
           >
-            <span style={{ fontSize: "medium" }}>Назад</span>
+            <span style={{ fontSize: "medium" }}>
+              <FormattedMessage id="Back" defaultMessage="Back" />
+            </span>
           </Button>
         </Link>
-        <h1 className="title-about-web">Обо мне</h1>
+        <h1 className="title-about-web">
+          <FormattedMessage id="About me" defaultMessage="About me" />
+        </h1>
       </div>
 
       <div className="text-diplomas">
@@ -34,21 +39,15 @@ function AboutMeWeb() {
             <Image className="my-img" src={MyPic} width={210} height={270} />
           </div>
           <big className="text-about-web">
-            Здравствуйте! Меня зовут Евгений Солтынчук, я представляю
-            оздоровительную массажную систему Юмейхо, которая посредством
-            комплекса манипуляций, позволяет устранить дисбаланс костей таза и
-            позвоночника, а также эффективно и безопасно восстановить
-            функциональное состояние всего организма. Также, система Юмейхо
-            позиционирует себя как техника, позволяющая достичь идеала женской
-            красоты и здоровья.
+            <FormattedMessage
+              id="Hello! My name is Yevgeny Soltynchuk. I present the Yumeiho wellness massage system, which through a complex of manipulations allows eliminating the imbalance of the pelvic and spine bones, as well as effectively and safely restoring the functional state of the whole body. The Yumeiho system also positiones itself as a technique that allows you to achieve the ideal of female beauty and health."
+              defaultMessage="Hello! My name is Yevgeny Soltynchuk. I present the Yumeiho wellness massage system, which through a complex of manipulations allows eliminating the imbalance of the pelvic and spine bones, as well as effectively and safely restoring the functional state of the whole body. The Yumeiho system also positiones itself as a technique that allows you to achieve the ideal of female beauty and health."
+            />
             <p style={{ marginTop: "12px" }}>
-              С 2016 года я являюсь сертифицированным специалистом в области
-              реабилитационного массажа, и имею большой опыт работы массажем с
-              людьми, связанными с тяжелыми физическими нагрузками, а также с
-              теми, кто ведет малоподвижный образ жизни. Благодаря 20 летнему
-              стажу профессиональной танцевальной карьеры, имею практику техники
-              восстановления тела после травм: переломов костей, растяжений мышц
-              и связок, ушибов, физических и эмоциональных перегрузок.
+              <FormattedMessage
+                id="Since 2016 I am a certified specialist in the field of rehabilitation massage, and I have extensive experience working with people whose lives are associated with heavy physical stress, and to those who lead a sedentary lifestyle. Thanks to 20 years of professional dance career, I have a practice of body recovery technique after injuries: bone fractures, muscle and ligament sprains, and bruises, physical and emotional overloads."
+                defaultMessage="Since 2016 I am a certified specialist in the field of rehabilitation massage, and I have extensive experience working with people whose lives are associated with heavy physical stress, and to those who lead a sedentary lifestyle. Thanks to 20 years of professional dance career, I have a practice of body recovery technique after injuries: bone fractures, muscle and ligament sprains, and bruises, physical and emotional overloads."
+              />
             </p>
           </big>
         </div>

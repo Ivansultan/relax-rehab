@@ -99,7 +99,12 @@ const HomePage = () => {
                     }}
                     // variant="contained"
                   >
-                    <span style={{ fontSize: "medium" }}>Массажи</span>
+                    <span style={{ fontSize: "medium" }}>
+                      <FormattedMessage
+                        id="Massages"
+                        defaultMessage="Massages"
+                      />
+                    </span>
                   </Button>
                 </a>
               </div>
@@ -114,7 +119,12 @@ const HomePage = () => {
                       border: "1px solid white",
                     }}
                   >
-                    <span style={{ fontSize: "medium" }}>Результаты работ</span>
+                    <span style={{ fontSize: "medium" }}>
+                      <FormattedMessage
+                        id="Work results"
+                        defaultMessage="Work results"
+                      />
+                    </span>
                   </Button>
                 </Link>
               </div>
@@ -148,7 +158,12 @@ const HomePage = () => {
                     }}
                     // variant="contained"
                   >
-                    <span style={{ fontSize: "medium" }}>Обо мне</span>
+                    <span style={{ fontSize: "medium" }}>
+                      <FormattedMessage
+                        id="About me"
+                        defaultMessage="About me"
+                      />
+                    </span>
                   </Button>
                 </Link>
               </div>
@@ -164,7 +179,9 @@ const HomePage = () => {
                     }}
                     // variant="contained"
                   >
-                    <span style={{ fontSize: "medium" }}>Отзывы</span>
+                    <span style={{ fontSize: "medium" }}>
+                      <FormattedMessage id="Reviews" defaultMessage="Reviews" />
+                    </span>
                   </Button>
                 </Link>
               </div>
@@ -174,29 +191,50 @@ const HomePage = () => {
         </div>
         {/* <div className="background-for-logo"> */}
         <div className="logo-image">
-          <div className="logo-title" style={{ padding: "235px 0 0 0 " }}>
+          <div
+            className="logo-title"
+            style={{
+              padding: "245px 0 0 0 ",
+              // background: "green",
+              width: "30%",
+            }}
+          >
             <h1
               style={{
+                // background: "gray",
                 color: "whitesmoke",
                 fontStyle: "normal",
+                display: "flex",
+                justifyContent: "flex-end",
                 fontWeight: "lighter",
               }}
             >
-              Реабилитационный
+              <FormattedMessage
+                id="Rehabilitation"
+                defaultMessage="Rehabilitation"
+              />
             </h1>
           </div>
           <div className="logo">
             <Image src={logoPic} />
           </div>
-          <div className="logo-title" style={{ padding: "65px 0 0 0 " }}>
+          <div
+            className="logo-title"
+            style={{
+              padding: "75px 0 0 0 ",
+              // background: "green",
+              width: "30%",
+            }}
+          >
             <h1
               style={{
+                // background: "gray",
                 color: "whitesmoke",
                 fontStyle: "normal",
                 fontWeight: "lighter",
               }}
             >
-              Расслабляющий
+              <FormattedMessage id="Relaxing" defaultMessage="Relaxing" />
             </h1>
           </div>
         </div>
@@ -206,10 +244,9 @@ const HomePage = () => {
 
         <div className="languages-container-mobile"></div>
       </div>
-      <div className="background-massages">
-        <Massages />
-      </div>
-
+      <hr className="home-page-line-web" />
+      <hr className="home-page-line-mob" />
+      <Massages />
       <AboutYumeiho />
     </>
   );

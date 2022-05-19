@@ -1,7 +1,7 @@
 .menu-header-mobile {
     display:flex;
     flex-direction: row;
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
+    /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png'); */
 }
 
 .menu-title-mobile {

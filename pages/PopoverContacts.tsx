@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Popover from "@material-ui/core/Popover";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import { FormattedMessage } from "react-intl";
 
 const useStyles = makeStyles((theme) => ({
   typography: {
@@ -40,7 +41,9 @@ export default function SimplePopover() {
         color="default"
         onClick={handleClick}
       >
-        <span style={{ fontSize: "medium" }}>Контакты</span>
+        <span style={{ fontSize: "medium" }}>
+          <FormattedMessage id="Contacts" defaultMessage="Contacts" />
+        </span>
       </Button>
       <Popover
         id={id}
@@ -58,16 +61,33 @@ export default function SimplePopover() {
       >
         <Typography className={classes.typography}>
           <div>
-            <ul>г. Киев</ul>
-            <ul>тел. +38 (093) 110-44-35</ul>
-            <ul>тел. +38 (066) 118-16-08</ul>
+            <ul>
+              <FormattedMessage id="Kyiv" defaultMessage="Kyiv" />
+            </ul>
+            <ul>
+              <FormattedMessage
+                id="tel. +38 (093) 110-44-35"
+                defaultMessage="tel. +38 (093) 110-44-35"
+              />
+            </ul>
+            <ul>
+              <FormattedMessage
+                id="tel. +38 (066) 118-16-08"
+                defaultMessage="tel. +38 (066) 118-16-08"
+              />
+            </ul>
             <ul>
               Email:{" "}
               <a className="email-link" href="mailto:jen.solty@gmail.com">
                 jen.solty@gmail.com
               </a>
             </ul>
-            <ul>Евгений Солтынчук</ul>
+            <ul>
+              <FormattedMessage
+                id="Yevgeny Soltynchuk"
+                defaultMessage="Yevgeny Soltynchuk"
+              />
+            </ul>
           </div>
         </Typography>
       </Popover>

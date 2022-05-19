@@ -56,6 +56,7 @@ import LogoPic from "./Images/logo2.png";
 import Image from "next/image";
 import MenuMobile from "./MenuMobile";
 import Button from "@material-ui/core/Button";
+import { FormattedMessage } from "react-intl";
 
 function ReviewsMob() {
   const readMore = () => {
@@ -82,7 +83,9 @@ function ReviewsMob() {
             <Image src={LogoPic} />
           </div>
           <div className="menu-title-mobile">
-            <h2>Отзывы</h2>
+            <h2>
+              <FormattedMessage id="Reviews" defaultMessage="Reviews" />
+            </h2>
           </div>
           <MenuMobile />
         </div>

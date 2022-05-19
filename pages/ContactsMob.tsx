@@ -5,6 +5,7 @@ import Image from "next/image";
 import MenuMobile from "./MenuMobile";
 import Button from "@mui/material/Button";
 import Link from "next/link";
+import { FormattedMessage } from "react-intl";
 
 function ContactsMob() {
   return (
@@ -16,7 +17,9 @@ function ContactsMob() {
               <Image src={LogoPic} />
             </div>
             <div className="menu-title-mobile">
-              <h2>Контакты</h2>
+              <h2>
+                <FormattedMessage id="Contacts" defaultMessage="Contacts" />
+              </h2>
             </div>
             <MenuMobile />
           </div>
@@ -25,15 +28,17 @@ function ContactsMob() {
 
           <div className="info-contacts-section">
             <big className="info-contacts">
-              <ul>г. Киев</ul>
               <ul>
-                тел.{" "}
+                <FormattedMessage id="Kyiv" defaultMessage="Kyiv" />
+              </ul>
+              <ul>
+                <FormattedMessage id="tel." defaultMessage="tel." />
                 <a className="phone-link" href="tel:+38 (093) 110-44-35">
                   +38 (093) 110-44-35
                 </a>
               </ul>
               <ul>
-                тел.{" "}
+                <FormattedMessage id="tel." defaultMessage="tel." />
                 <a className="phone-link" href="tel:+38 (066) 118-16-08">
                   +38 (066) 118-16-08
                 </a>
@@ -44,7 +49,12 @@ function ContactsMob() {
                   jen.solty@gmail.com
                 </a>
               </ul>
-              <ul>Евгений Солтынчук</ul>
+              <ul>
+                <FormattedMessage
+                  id="Yevgeny Soltynchuk"
+                  defaultMessage="Yevgeny Soltynchuk"
+                />
+              </ul>
               <ul>
                 Extra info:
                 <Link href="https://www.facebook.com/profile.php?id=100074749413242">

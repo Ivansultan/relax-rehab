@@ -137,6 +137,7 @@ import Results3 from "../public/results3.jpg";
 import Results4 from "../public/results4.jpg";
 import Results5 from "../public/results5.jpg";
 import Results6 from "../public/results6.jpg";
+import { FormattedMessage } from "react-intl";
 
 function WorkResultsWeb() {
   return (
@@ -151,11 +152,15 @@ function WorkResultsWeb() {
               border: "1px solid whitesmoke",
             }}
           >
-            <span style={{ fontSize: "medium" }}>Назад</span>
+            <span style={{ fontSize: "medium" }}>
+              <FormattedMessage id="Back" defaultMessage="Back" />
+            </span>
           </Button>
         </Link>
 
-        <h1 className="work-results-title">Результаты работ</h1>
+        <h1 className="work-results-title">
+          <FormattedMessage id="Work results" defaultMessage="Work results" />
+        </h1>
 
         <div className="gallery-container">
           <Link href="#slide-1" scroll={false}>

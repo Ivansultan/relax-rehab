@@ -4,13 +4,16 @@ import Image from "next/image";
 import Menu from "./Images/menu2.png";
 import Link from "next/link";
 import MenuMobile from "./MenuMobile";
+import { FormattedMessage } from "react-intl";
 
 function TitleContacts() {
   return (
     <div className="title-contacts-container">
       <div className="title-contacts">
         <div className="city-container">
-          <b className="city">г. Киев</b>
+          <b className="city">
+            <FormattedMessage id="Kyiv" defaultMessage="Kyiv" />
+          </b>
         </div>
         <div className="phone-container">
           <div className="phone-icon">

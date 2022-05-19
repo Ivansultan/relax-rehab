@@ -1,5 +1,8 @@
+
 .about-yumeiho-container {
     margin-top: 30px;
+    background: whitesmoke;
+    margin-bottom: 20px;
 }
 
 .yumeiho-title{
@@ -36,13 +39,16 @@
     margin-right: 8px;
  }
 .about-yumeiho-container-web {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
+    border-radius: 5px;
+    background: whitesmoke
 }
 
 .yumeiho-title-web{
   text-align: center;
+  padding-top: 20px;
 }
 
 .yumeiho-web {

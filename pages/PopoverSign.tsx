@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Popover from "@mui/material/Popover";
 import Link from "next/link";
+import { FormattedMessage } from "react-intl";
 import PopupState, { bindTrigger, bindPopover } from "material-ui-popup-state";
 
 export default function PopoverPopupState() {
@@ -21,7 +22,12 @@ export default function PopoverPopupState() {
             variant="contained"
             {...bindTrigger(popupState)}
           >
-            <span style={{ fontSize: "medium" }}>Записаться на массаж</span>
+            <span style={{ fontSize: "medium" }}>
+              <FormattedMessage
+                id="Book a massage"
+                defaultMessage="Book a massage"
+              />
+            </span>
           </Button>
           <Popover
             {...bindPopover(popupState)}
@@ -40,7 +46,9 @@ export default function PopoverPopupState() {
               }}
               sx={{ p: 2 }}
             >
-              <big>Позвонить</big>
+              <big>
+                <FormattedMessage id="Call" defaultMessage="Call" />
+              </big>
               <ul>
                 <Button
                   style={{
@@ -59,7 +67,9 @@ export default function PopoverPopupState() {
                   </div>
                 </Button>
               </ul>
-              <big>Написать</big>
+              <big>
+                <FormattedMessage id="Write" defaultMessage="Write" />
+              </big>
               {/* <ul> */}
               <div>
                 <Link href="https://www.facebook.com/messages/t/100074749413242">

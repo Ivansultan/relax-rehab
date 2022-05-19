@@ -8,6 +8,7 @@ import Diploma1 from "../public/diploma1.jpg";
 import Diploma2 from "../public/diploma2.jpg";
 import Diploma3 from "../public/diploma3.jpg";
 import Diploma4 from "../public/diploma4.jpg";
+import { FormattedMessage } from "react-intl";
 
 function AboutMeMob() {
   return (
@@ -18,7 +19,9 @@ function AboutMeMob() {
             <Image src={LogoPic} />
           </div>
           <div className="menu-title-mobile">
-            <h2>Обо мне</h2>
+            <h2>
+              <FormattedMessage id="About me" defaultMessage="About me" />
+            </h2>
           </div>
           <MenuMobile />
         </div>

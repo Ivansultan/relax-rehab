@@ -9,6 +9,7 @@ import Results3 from "../public/results3.jpg";
 import Results4 from "../public/results4.jpg";
 import Results5 from "../public/results5.jpg";
 import Results6 from "../public/results6.jpg";
+import { FormattedMessage } from "react-intl";
 
 function WorkResults() {
   return (
@@ -19,7 +20,12 @@ function WorkResults() {
             <Image src={LogoPic} />
           </div>
           <div className="menu-title-mobile">
-            <h2>Результаты работ</h2>
+            <h2>
+              <FormattedMessage
+                id="Work results"
+                defaultMessage="Work results"
+              />
+            </h2>
           </div>
           <MenuMobile />
         </div>

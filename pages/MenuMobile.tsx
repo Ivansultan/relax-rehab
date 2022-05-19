@@ -1,5 +1,6 @@
 import MainLayout from "./MainLayout";
 import Link from "next/link";
+import { FormattedMessage } from "react-intl";
 
 function MenuMobile() {
   return (
@@ -13,22 +14,32 @@ function MenuMobile() {
         <div className="wrapper">
           <ul>
             <li>
-              <a href="/">Главная</a>
+              <a href="/">
+                <FormattedMessage id="Main" defaultMessage="Main" />
+              </a>
             </li>
             <li>
-              <a href="/WorkResultsMob">Результаты</a>
+              <a href="/WorkResultsMob">
+                <FormattedMessage id="Results" defaultMessage="Results" />
+              </a>
             </li>
             <li>
               <a href="/FAQMob">FAQ</a>
             </li>
             <li>
-              <a href="/AboutMeMob">Обо мне</a>
+              <a href="/AboutMeMob">
+                <FormattedMessage id="About me" defaultMessage="About me" />
+              </a>
             </li>
             <li>
-              <a href="/ReviewsMob">Отзывы</a>
+              <a href="/ReviewsMob">
+                <FormattedMessage id="Reviews" defaultMessage="Reviews" />
+              </a>
             </li>
             <li>
-              <a href="/ContactsMob">Контакты</a>
+              <a href="/ContactsMob">
+                <FormattedMessage id="Contacts" defaultMessage="Contacts" />
+              </a>
             </li>
           </ul>
         </div>

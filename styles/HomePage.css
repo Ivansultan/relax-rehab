@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: space-around;
   /* background-image: url(../public/background6.jpg); */
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
+  /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png'); */
 
 }
 
@@ -21,7 +21,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: -10px;
+  margin-bottom: -14px;
 }
 
 .title-container {
@@ -163,6 +163,9 @@
  .title-container {
   margin-bottom: -30px;
 }
+.home-page-line-web {
+  display: none;
+}
   
 }
 
@@ -201,6 +204,9 @@
   .copyrightMob {
     display: none;
    }
+  .home-page-line-mob {
+    display: none;
+  }
 }
 
 /* @media screen and (max-width: 500px) {
@@ -450,12 +456,13 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 20px
+  margin-top: 20px;
+  /* background: red */
 }
 
 .logo {
   width: 250px;
-  /* margin-top: 30px; */
+  margin-top: 20px;
   /* margin-right: 28px; */
   /* background-color: orange; */
 }
@@ -464,7 +471,7 @@
   text-align: center;
   width: 100%;
   margin-top: 35px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   /* margin-left: 28px; */
   /* display:flex;
   justify-content: center; */
@@ -480,6 +487,14 @@
   margin-top: 30px;
 }
 
-.background-massages {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
+.home-page-line-web {
+  border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;
+}
+.home-page-line-mob {
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;
 }
