@@ -1,5 +1,3 @@
-// import styles from "../styles/element.module.css";
-
 import { languages } from "./index";
 import Image from "next/image";
 import LogoPic from "./Images/logo2.png";
@@ -22,7 +20,6 @@ const Languages = () => {
                   paddingLeft: 10,
                   color: isActiveLocale ? "lightgreen" : "whitesmoke",
                   cursor: isActiveLocale ? "default" : "pointer",
-                  // fontWeight: isActiveLocale ? "bold" : "normal",
                   textDecoration: isActiveLocale ? "" : "none",
                 }}
               >
@@ -32,10 +29,6 @@ const Languages = () => {
           );
         })}
       </div>
-
-      {/* <div className="languages-container-mobile"> */}
-
-      {/* </div> */}
 
       <div className="logo-mobile-container">
         <div className="logo-mobile">

@@ -1,6 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useRef } from "react";
-// import "./styles.css";
 
 let brakePoints = [350, 500, 750];
 let images = [];

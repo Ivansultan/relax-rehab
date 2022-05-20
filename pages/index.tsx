@@ -10,32 +10,8 @@ import English from "../translations/en.json";
 import Ukrainian from "../translations/ua.json";
 import BottomNavPanel from "./BottomNavPanel";
 import { useRouter } from "next/router";
-// import Link from "next/link";
 
 type Locale = "en" | "ua" | "ru";
-
-// type State = {
-//   locale: Locale;
-// };
-
-// type Action = State & {
-//   type: "setLocale";
-// };
-
-// const reducer = (state: State, action: Action) => {
-//   switch (action.type) {
-//     case "setLocale":
-//       return { locale: action.locale };
-//     default:
-//       throw new Error();
-//   }
-// };
-
-// const messages = {
-//   en: English,
-//   ua: Ukrainian,
-//   ru: Russian,
-// };
 
 type Language = {
   name: string;
@@ -49,9 +25,6 @@ export const languages: Language[] = [
 ];
 
 function App() {
-  // const [state, dispatch] = useReducer(reducer, { locale: "en" });
-  // const { locale } = state;
-  // const router = useRouter();
   const [_window, setSize] = useState(undefined);
 
   React.useEffect(() => {
@@ -80,19 +53,15 @@ function App() {
   }
 
   const { innerHeight, innerWidth } = _window;
-  // console.log("locale", locale);
 
   return (
     <>
-      {/* <IntlProvider locale={locale} messages={messages[locale]}> */}
       <MainLayout title={"Юмейхо терапия"}>
         <div>
-          {/* <HomePage locale={locale} dispatch={dispatch} /> */}
           <HomePage />
         </div>
         <BottomNavPanel />
       </MainLayout>
-      {/* </IntlProvider> */}
     </>
   );
 }

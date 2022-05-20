@@ -1,5 +1,4 @@
 import MainLayout from "./MainLayout";
-import Link from "next/link";
 import { FormattedMessage } from "react-intl";
 
 function MenuMobile() {

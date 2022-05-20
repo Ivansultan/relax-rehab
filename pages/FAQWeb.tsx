@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Button from "@material-ui/core/Button";
 import { FormattedMessage } from "react-intl";
-import Image from "next/image";
-import Background from "../public/background5.jpg";
 
 function FAQWeb() {
   return (
@@ -15,7 +13,6 @@ function FAQWeb() {
             color: "whitesmoke",
             border: "1px solid whitesmoke",
           }}
-          // variant="contained"
         >
           <span style={{ fontSize: "medium" }}>
             <FormattedMessage id="Back" defaultMessage="Back" />

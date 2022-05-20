@@ -70,7 +70,6 @@ export default function PopoverPopupState() {
               <big>
                 <FormattedMessage id="Write" defaultMessage="Write" />
               </big>
-              {/* <ul> */}
               <div>
                 <Link href="https://www.facebook.com/messages/t/100074749413242">
                   <Button
@@ -85,8 +84,6 @@ export default function PopoverPopupState() {
                     />
                   </Button>
                 </Link>
-                {/* </ul> */}
-                {/* <ul> */}
                 <Link href="https://instagram.com/jenya_massage_kiev?utm_medium=copy_link">
                   <Button
                     style={{
@@ -101,8 +98,6 @@ export default function PopoverPopupState() {
                   </Button>
                 </Link>
               </div>
-              {/* </ul> */}
-              {/* </ul> */}
             </Typography>
           </Popover>
         </div>

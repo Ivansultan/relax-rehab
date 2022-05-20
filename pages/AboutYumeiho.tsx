@@ -11,8 +11,8 @@ function AboutYumeiho() {
       <div className="about-yumeiho-container">
         <h3 className="yumeiho-title">
           <FormattedMessage
-            id="About Yumeiho Therapy"
-            defaultMessage="About Yumeiho Therapy"
+            id="ABOUT YUMEIHO THERAPY"
+            defaultMessage="ABOUT YUMEIHO THERAPY"
           />
         </h3>
         <div className="first-section">

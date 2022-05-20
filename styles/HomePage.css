@@ -4,20 +4,12 @@
 
 .home-page-container {
   display: flex;
-  /* height: inherit; */
-  /* overflow: auto; */
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  /* background-image: url(../public/background6.jpg); */
-  /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png'); */
-
 }
 
-
-
 .header {
-  /* position:fixed; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -25,23 +17,19 @@
 }
 
 .title-container {
-  /* background-color: rgb(0, 255, 170); */
   flex-direction: row;
   display: flex;
   text-align: center;
   width: 100%;
   color: rgb(237, 242, 245);
-  /* margin-bottom: -10px; */
 }
 
 .main-title {
-  /* background-color: rgb(0, 255, 251); */
   width: 100%;
   margin-top: 10px;
 }
 
 .title {
-  /* background-color: orange; */
   width: 100%;
   margin-top: 10px;
 }
@@ -51,11 +39,9 @@
   justify-content: center;
   align-items: center ;
   width: 50%;
-  /* background-color: yellow; */
 } 
 
 .languages {
-  /* background-color: aqua; */
   width: 15%;
 }
 
@@ -63,27 +49,11 @@
   display: flex;
   justify-content: center;
   align-items: center ;
-  /* width: 70%; */
-  /* margin-left: 25px; */
-  /* background-color: bisque; */
 }
 
 .languages-mobile {
-  /* width: 50%; */
   margin-top: 15px;
-  /* background-color: rgb(13, 42, 6); */
   width: 20%;
-
-  /* height: min-content; */
-  /* display: flex;
-  justify-content: space-around; */
-  /* align-items: flex-end; ; */
-  /* font-size: 17px; */
-  /* width: 40px; */
-  /* 
-  
-  justify-content: center ;
-  margin-top: -50px; */
 }
 
 .logo-mobile-container {
@@ -91,19 +61,10 @@
   align-items: center ;
   justify-content: center ;
   width: 50%;
-  /* margin-top: 10px; */
-  /* margin-bottom: -10px; */
-  /* height: 100%; */
-  /* background-color: red; */
 }
 
 .logo-mobile {
   margin-top: 10px;
-  /* margin-left: -5px; */
-  /* display: flex; */
-  /* align-items: flex-end; */
-  /* width: 80%; */
-  /* background-color:yellow; */
 }
 
 @media screen and (max-width: 766px) {
@@ -122,11 +83,9 @@
   .languages-container {
     display: none;
   }
-  
   .languages {
     display: none;
   }
-
   .massages {
     display: none;
   }
@@ -179,9 +138,6 @@
   .logo-mobile-container {
     display: none;
   }
-  /* .languages-container-mobile {
-    display: none;
-  } */
   .languages-mobile {
     display: none;
   }
@@ -195,9 +151,6 @@
   .bottom-navbar {
     display: none;
   }
-  /* .massages-container {
-    display: none;
-  } */
   .about-yumeiho-container {
     display: none;
   }
@@ -209,43 +162,6 @@
   }
 }
 
-/* @media screen and (max-width: 500px) {
-  
-  .languages-mobile {
-    margin-left: 10px;
-  }
-}
-
-@media screen and (min-width: 490px) {
-  .languages-mobile {
-    margin-left: 10px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .languages-mobile {
-    margin-left: 10px;
-  }
-}
-
-@media screen and (min-width: 470px) {
-  .languages-mobile {
-    margin-left: 10px;
-  }
-}
-
-@media screen and (min-width: 460px) {
-  .languages-mobile {
-    margin-left: 10px;
-  }
-}
-
-@media screen and (min-width: 450px) {
-  .languages-mobile {
-    margin-left: 10px;
-  }
-} */
-
 @media screen and (min-width: 401px) {
   .logo-mobile {
     width: 102px;
@@ -256,12 +172,7 @@
   .title {
     font-size: 12px;
   }
-  /* .logo-mobile-container {
-    max-width: 40px
-  } */
-  /* .logo-mobile {
-    width: 45px
-  } */
+  
   .languages-mobile {
     font-size: 15px;
   }
@@ -276,7 +187,6 @@
   }
 }
 
-
 @media screen and (max-width: 300px) {
   .title {
     font-size: 10px;
@@ -286,53 +196,39 @@
   }
 }
 
-
-
 .title-contacts-container {
   width: 50%;
   display: flex;
   align-items: center ;
   justify-content: center;
   margin-top: 8px
-  /* background-color: red */
 }
 
 .title-contacts {
   display: flex;
   flex-direction: column;
-  /* background-color:brown; */
-  
 }
 
 .title-contacts-mobile {
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
   height: 70%;
   align-items: center;
   justify-content: space-around;
-  /* background-color: orange; */
 }
 
 .city-container {
-  /* background-color: blue; */
   display: flex;
   justify-content: flex-start;
 }
 
-.city {
-  
-}
-
 .phone-container {
-  /* background-color: rgb(209, 26, 26); */
   display: flex;
   margin-top: 2px;
   margin-bottom: 2px;
 }
 
 .phone-icon {
-  /* background-color: orange; */
   align-items: center;
   display: flex;
   padding: 2px 5px 2px 0;
@@ -357,12 +253,7 @@
   flex-direction: column;
 }
 
-/* .phone-mobile {
-  width: 30px; 
-} */
-
 .phone-number {
-  /* background-color:pink; */
   align-items: center;
   display: flex;
 }
@@ -371,7 +262,6 @@
   display: flex;
   justify-content: flex-start;
   padding: 3px 0 0 0;
-  /* background-color: green; */
 }
 
 .social-network {
@@ -395,39 +285,11 @@
 }
 
 .menu-icon-container {
-  /* background: blue; */
   display: flex;
-  /* flex-direction: column; */
   width: 50%;
-  /* height: 100%; */
   align-items: center;
   justify-content: center;
 }
-
-
-/* .menu-mobile-container {
-  background-color: purple;
-  display: flex; 
-  justify-content: center;
-  width: 100%;
-} */
-
-/* .menu-mobile-page {
-  background-color: blue;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column; */
-  /* align-items: center; */
-  /* height: 60%;
-  width: 70%;
-  margin-top: 50px;
-
-} */
-
-/* .menu-btn {
-  width: 60px; 
-  height: 40px; 
-} */
 
 .nav-panel {
   display: flex;
@@ -447,24 +309,17 @@
   justify-content: space-around;
   width: 40%;
 }
-/* .background-for-logo {
-  width: 100%;
-  background-image: url(../public/background.jpeg);
-} */
 
 .logo-image {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  /* background: red */
 }
 
 .logo {
   width: 250px;
   margin-top: 20px;
-  /* margin-right: 28px; */
-  /* background-color: orange; */
 }
 
 .sign-up-button {
@@ -472,16 +327,7 @@
   width: 100%;
   margin-top: 35px;
   margin-bottom: 40px;
-  /* margin-left: 28px; */
-  /* display:flex;
-  justify-content: center; */
-  /* background-color: red; */
 }
-
-/* .popover-sign {
-  display: "flex"; 
-  justify-content: "space-around";
-} */
 
 .massages-container {
   margin-top: 30px;

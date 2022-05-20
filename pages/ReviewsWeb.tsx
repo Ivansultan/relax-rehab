@@ -63,7 +63,6 @@ function ReviewsWeb() {
             </span>
           </big>
           <Button id="btn" onClick={() => readMore()}>
-            {/* <FormattedMessage id="more" defaultMessage="more" /> */}
             more
           </Button>
         </div>

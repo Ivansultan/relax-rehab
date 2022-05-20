@@ -1,11 +1,6 @@
-.contacts-container-mobile {
-    /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png'); */
-}
-
 .menu-header-mobile {
     display:flex;
     flex-direction: row;
-    /* background-size: cover; */
 }
 
 .menu-title-mobile {

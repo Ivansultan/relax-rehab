@@ -1,5 +1,4 @@
 import { makeStyles } from "@material-ui/core";
-import { url } from "inspector";
 
 export const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,7 +13,6 @@ export const useStyles = makeStyles((theme) => ({
   title: {
     fontSize: 24,
     textAlign: "center",
-    // fontFamily: "Lato",
     fontFamily: "  Oswald",
   },
   shortDescription: {
@@ -58,9 +56,7 @@ export const useStyles = makeStyles((theme) => ({
     maxHeight: "100%",
     flexWrap: "wrap",
     marginTop: 20,
-    // backgroundColor: "darkgray",
-    // background: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png",
-    backgroundColor: "../public/background6.jpg",
+    marginBottom: 30,
   },
 
   card: {

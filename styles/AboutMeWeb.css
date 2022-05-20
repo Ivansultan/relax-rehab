@@ -1,18 +1,9 @@
-.container-about-web {
-    /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png'); */
-}
-
-.text-diplomas {
-    /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png'); */
-}
-
 .title-about-web {
     color: whitesmoke;
     text-align: center;
 }
 
 .about-web {
-    /* margin-right: 190px; */
     margin-right: 160px;
     margin-top: 20px;
     margin-left:  40px;
@@ -22,7 +13,6 @@
     float: left;
     margin-top: 5px;
     margin-right: 40px;
-    /* margin-left:  40px; */
 }
 
 .text-about-web {

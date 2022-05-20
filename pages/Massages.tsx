@@ -35,7 +35,6 @@ const Massages = (props: Props) => {
     japanese: {
       title: <FormattedMessage id="Japanese" defaultMessage="Japanese" />,
       shortDescription: (
-        // <FormattedMessage id="Yumeiho therapy dan 1 (Japanese massage technique) " />
         <FormattedMessage
           id="(45 min. - 1 hour) - 800 UAH"
           defaultMessage="(45 min. - 1 hour) - 800 UAH"
@@ -132,7 +131,6 @@ const Massages = (props: Props) => {
     vietnamese: {
       title: <FormattedMessage id="Vietnamese" defaultMessage="Vietnamese" />,
       shortDescription: (
-        // <FormattedMessage id="Yumeiho therapy dan 2 (Vietnamese massage technique)" />
         <FormattedMessage
           id="(45 min. - 1 hour) - 800 UAH"
           defaultMessage="(45 min. - 1 hour) - 800 UAH"
@@ -297,7 +295,6 @@ const Massages = (props: Props) => {
     visceral: {
       title: <FormattedMessage id="Abdominal" defaultMessage="Abdominal" />,
       shortDescription: (
-        // <FormattedMessage id="Visceral chiropractic (abdominal massage)" />
         <FormattedMessage
           id="(45 min. - 1 hour) - 500 UAH"
           defaultMessage="(45 min. - 1 hour) - 500 UAH"
@@ -380,8 +377,6 @@ const Massages = (props: Props) => {
   };
 
   const classes = useStyles();
-
-  // console.log("classes", classes);
 
   const [open, setOpen] = React.useState(false);
 

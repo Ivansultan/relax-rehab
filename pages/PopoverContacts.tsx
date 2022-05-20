@@ -37,7 +37,6 @@ export default function SimplePopover() {
           border: "1px solid white",
         }}
         aria-describedby={id}
-        // variant="contained"
         color="default"
         onClick={handleClick}
       >
