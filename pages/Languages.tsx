@@ -12,7 +12,7 @@ const Languages = () => {
         {languages.map((language, index) => {
           const isActiveLocale = language.locale === locale;
           return (
-            <Link href="/" locale={language.locale}>
+            <Link href="/" key={index} locale={language.locale}>
               <a
                 className="languages"
                 key={index}

@@ -42,7 +42,7 @@ const HomePage = () => {
                   {languages.map((language, index) => {
                     const isActiveLocale = language.locale === locale;
                     return (
-                      <Link href="/" locale={language.locale}>
+                      <Link href="/" key={index} locale={language.locale}>
                         <a
                           className="languages-mobile"
                           key={index}
