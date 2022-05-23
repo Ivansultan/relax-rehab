@@ -1,15 +1,7 @@
 import HomePage from "./HomePage";
 import MainLayout from "./MainLayout";
-import React, { useReducer, useState } from "react";
-import Background from "../public/background.jpeg";
-import Image from "next/image";
-import Massages from "./Massages";
-import { IntlProvider } from "react-intl";
-import Russian from "../translations/ru.json";
-import English from "../translations/en.json";
-import Ukrainian from "../translations/ua.json";
+import React, { useState } from "react";
 import BottomNavPanel from "./BottomNavPanel";
-import { useRouter } from "next/router";
 
 type Locale = "en" | "ua" | "ru";
 
