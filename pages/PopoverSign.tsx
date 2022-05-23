@@ -6,7 +6,7 @@ import Link from "next/link";
 import { FormattedMessage } from "react-intl";
 import PopupState, { bindTrigger, bindPopover } from "material-ui-popup-state";
 
-export default function PopoverPopupState() {
+function PopoverPopupState() {
   return (
     <PopupState variant="popover" popupId="demo-popup-popover">
       {(popupState) => (
@@ -105,3 +105,5 @@ export default function PopoverPopupState() {
     </PopupState>
   );
 }
+
+export default PopoverPopupState;

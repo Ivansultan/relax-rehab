@@ -23,7 +23,7 @@ import { useRouter } from "next/router";
 import { useMemo } from "react";
 import { IntlProvider } from "react-intl";
 
-export default function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   const { locale } = useRouter();
   const [shortLocale] = locale ? locale.split(" ") : ["en"];
 
@@ -56,3 +56,5 @@ export default function MyApp({ Component, pageProps }) {
     </>
   );
 }
+
+export default MyApp;
