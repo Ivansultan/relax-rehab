@@ -21,7 +21,7 @@ import Ukrainian from "../content/compiled-locales/ua.json";
 import Russian from "../content/compiled-locales/ru.json";
 import { useRouter } from "next/router";
 import { useMemo } from "react";
-import { IntlProvider, FormattedMessage } from "react-intl";
+import { IntlProvider } from "react-intl";
 
 export default function MyApp({ Component, pageProps }) {
   const { locale } = useRouter();
@@ -51,7 +51,6 @@ export default function MyApp({ Component, pageProps }) {
         messages={messages}
         onError={() => null}
       >
-        {/* <FormattedMessage defaultMessage="текст" /> */}
         <Component {...pageProps} />
       </IntlProvider>
     </>
