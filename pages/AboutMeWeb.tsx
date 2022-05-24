@@ -6,8 +6,6 @@ import Diploma1 from "../public/diploma1.jpg";
 import Diploma2 from "../public/diploma2.jpg";
 import Diploma3 from "../public/diploma3.jpg";
 import Diploma4 from "../public/diploma4.jpg";
-// import Footer from "./FooterMob";
-// import Diplomas from "./Diplomas";
 import { FormattedMessage } from "react-intl";
 
 function AboutMeWeb() {

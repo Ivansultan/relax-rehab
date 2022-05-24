@@ -12,7 +12,7 @@ import { FormattedMessage } from "react-intl";
 function WorkResultsWeb() {
   return (
     <>
-      <div className="work-results-container-web">
+      <div>
         <Link href={"/"}>
           <Button
             style={{
