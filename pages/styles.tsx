@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 
-export const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     minWidth: 275,
     margin: 5,
@@ -93,3 +93,5 @@ export const useStyles = makeStyles((theme) => ({
     opacity: 0.8,
   },
 }));
+
+export default useStyles;

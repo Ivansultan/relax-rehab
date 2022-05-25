@@ -11,7 +11,7 @@ import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import MasonryLayout from "./MasonryLayout";
 import { FormattedMessage } from "react-intl";
-import { useStyles } from "./styles";
+import useStyles from "./styles";
 
 export type MassageType = "japanese" | "vietnamese" | "relaxing" | "visceral";
 type ExtraInfo = {
