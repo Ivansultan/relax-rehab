@@ -125,6 +125,18 @@
 .home-page-line-web {
   display: none;
 }
+.container-about-web {
+  display: none;
+}
+.faq-container-web {
+  display: none;
+}
+.reviews-container-web {
+  display: none;
+}
+.work-results-container-web {
+  display: none;
+}
   
 }
 
@@ -158,6 +170,18 @@
     display: none;
    }
   .home-page-line-mob {
+    display: none;
+  }
+  .about-me-container-mobile {
+    display: none;
+  }
+  .faq-container-mobile {
+    display: none;
+  }
+  .reviews-container-mobile {
+    display: none;
+  }
+  .work-results-container-mobile {
     display: none;
   }
 }

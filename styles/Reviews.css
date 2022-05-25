@@ -1,3 +1,30 @@
+.title {
+    color: whitesmoke;
+    text-align: center;
+}
+
+#more {
+    display: none;
+}
+
+#btn {
+    color: whitesmoke;
+}
+
+.review-container {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.client-name {
+  color: lightcoral;
+}
+
+.client-review {
+  color: lightblue;
+}
+
+
 .menu-header-mobile {
     display:flex;
     flex-direction: row;
@@ -35,12 +62,4 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 30px;
-}
-
-.client-name {
-  color: lightcoral;
-}
-
-.client-review {
-  color: lightblue;
 }

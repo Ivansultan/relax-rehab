@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Yumeiho from "./Images/yumeiho.png";
 import Yumeiho2 from "./Images/yumeiho2.jpg";
-import FooterMob from "./FooterMob";
-import FooterWeb from "./FooterWeb";
+import Footer from "./Footer";
 import { FormattedMessage } from "react-intl";
 
 function AboutYumeiho() {
@@ -42,7 +41,7 @@ function AboutYumeiho() {
             </big>
           </div>
         </div>
-        <FooterMob />
+        <Footer />
       </div>
       <div className="about-yumeiho-container-web">
         <h3 className="yumeiho-title-web">
@@ -78,7 +77,7 @@ function AboutYumeiho() {
             </big>
           </div>
         </div>
-        <FooterWeb />
+        <Footer />
       </div>
     </>
   );

@@ -18,15 +18,15 @@ function MenuMobile() {
               </a>
             </li>
             <li>
-              <a href="/WorkResultsMob">
+              <a href="/WorkResults">
                 <FormattedMessage id="Results" defaultMessage="Results" />
               </a>
             </li>
             <li>
-              <a href="/FAQMob">FAQ</a>
+              <a href="/FAQ">FAQ</a>
             </li>
             <li>
-              <a href="/AboutMeMob">
+              <a href="/AboutMe">
                 <FormattedMessage id="About me" defaultMessage="About me" />
               </a>
             </li>

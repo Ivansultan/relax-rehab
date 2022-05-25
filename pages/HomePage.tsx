@@ -88,7 +88,7 @@ const HomePage = () => {
               </div>
 
               <div className="results">
-                <Link href={"/WorkResultsWeb"}>
+                <Link href={"/WorkResults"}>
                   <Button
                     style={{
                       backgroundColor: "transparent",
@@ -108,7 +108,7 @@ const HomePage = () => {
               </div>
 
               <div className="faq">
-                <Link href={"/FAQWeb"}>
+                <Link href={"/FAQ"}>
                   <Button
                     style={{
                       backgroundColor: "transparent",
@@ -125,7 +125,7 @@ const HomePage = () => {
 
             <div className="right-section">
               <div className="about-me">
-                <Link href={"/AboutMeWeb"}>
+                <Link href={"/AboutMe"}>
                   <Button
                     style={{
                       backgroundColor: "transparent",
