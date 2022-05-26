@@ -21,21 +21,25 @@ function BottomNavPanel() {
             alignItems: "center",
           }}
         >
-          <Link href="tel:+380931104435">
-            <BottomNavigationAction icon={<IconPhone />} />
-          </Link>
+          <BottomNavigationAction
+            href="tel:+380931104435"
+            icon={<IconPhone />}
+          />
 
-          <Link href="viber://chat?number=%2B380931104435">
-            <BottomNavigationAction icon={<ViberIcon />} />
-          </Link>
+          <BottomNavigationAction
+            href="viber://chat?number=%2B380931104435"
+            icon={<ViberIcon />}
+          />
 
-          <Link href="https://api.whatsapp.com/send?phone=+380931104435">
-            <BottomNavigationAction icon={<WhatsAppIcon />} />
-          </Link>
+          <BottomNavigationAction
+            href="https://api.whatsapp.com/send?phone=+380931104435"
+            icon={<WhatsAppIcon />}
+          />
 
-          <Link href="https://telegram.me/Mavrik55">
-            <BottomNavigationAction icon={<TelegramIcon />} />
-          </Link>
+          <BottomNavigationAction
+            href="https://telegram.me/Mavrik55"
+            icon={<TelegramIcon />}
+          />
         </BottomNavigation>
       </Paper>
     </div>

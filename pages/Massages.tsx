@@ -454,14 +454,14 @@ const Massages = (props: Props) => {
               </div>
 
               <div>
-                {activeMassage?.extraInfo.map((info) => {
+                {activeMassage?.extraInfo.map((info, index) => {
                   console.log("info", info);
                   return (
-                    <div className={classes.modalExtraInfo}>
+                    <div key={index} className={classes.modalExtraInfo}>
                       {info.title}
                       <ol>
-                        {info.items.map((item) => {
-                          return <li>{item}</li>;
+                        {info.items.map((item, index) => {
+                          return <li key={index}>{item}</li>;
                         })}
                       </ol>
                     </div>

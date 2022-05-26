@@ -18,7 +18,7 @@ function MasonryLayout(props: { images: any[] }) {
       <div className="masonry-container">
         <Masonry brakePoints={brakePoints}>
           {props.images.map((image, id) => {
-            return <Tile src={image} />;
+            return <Tile key={id} src={image} />;
           })}
         </Masonry>
       </div>
