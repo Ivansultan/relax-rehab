@@ -58,8 +58,13 @@ export default function SimplePopover() {
           horizontal: "center",
         }}
       >
-        <Typography className={classes.typography}>
-          <div>
+        <Typography component={"ul"} className={classes.typography}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
             <ul>
               <FormattedMessage id="Kyiv" defaultMessage="Kyiv" />
             </ul>

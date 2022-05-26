@@ -41,6 +41,7 @@ function PopoverPopupState() {
             }}
           >
             <Typography
+              component={"ul"}
               style={{
                 textAlign: "center",
               }}
