@@ -2,7 +2,7 @@ import Link from "next/link";
 import Button from "@material-ui/core/Button";
 import { FormattedMessage } from "react-intl";
 import MainLayout from "./MainLayout";
-import LogoPic from "./Images/logo2.png";
+import logoPic from "../public/logo2.png";
 import Image from "next/image";
 import MenuMobile from "./MenuMobile";
 import BottomNavPanel from "./BottomNavPanel";
@@ -200,7 +200,7 @@ function FAQ() {
         <div className="faq-container-mobile">
           <div className="menu-header-mobile">
             <div className="menu-logo-mobile">
-              <Image src={LogoPic} />
+              <Image src={logoPic} />
             </div>
             <div className="menu-title-mobile">
               <h2>FAQ</h2>

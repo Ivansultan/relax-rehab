@@ -1,11 +1,11 @@
-function WhatsAppIcon() {
+function IconWhatsApp() {
   return (
     <img
       className="instagram-facebook-phone-mobile"
       // src="https://pngimg.com/uploads/whatsapp/small/whatsapp_PNG4.png"
-      src="/whatsapp.png"
+      src="/logoWhatsApp.png"
     />
   );
 }
 
-export default WhatsAppIcon;
+export default IconWhatsApp;

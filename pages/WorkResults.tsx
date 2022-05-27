@@ -10,7 +10,7 @@ import Results6 from "../public/results6.jpg";
 import { FormattedMessage } from "react-intl";
 import BottomNavPanel from "./BottomNavPanel";
 import MainLayout from "./MainLayout";
-import LogoPic from "./Images/logo2.png";
+import logoPic from "../public/logo2.png";
 import MenuMobile from "./MenuMobile";
 
 function WorkResults() {
@@ -97,7 +97,7 @@ function WorkResults() {
         <div className="work-results-container-mobile">
           <div className="menu-header-mobile">
             <div className="menu-logo-mobile">
-              <Image src={LogoPic} />
+              <Image src={logoPic} />
             </div>
             <div className="menu-title-mobile">
               <h2>

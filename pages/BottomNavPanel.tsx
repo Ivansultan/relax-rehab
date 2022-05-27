@@ -1,11 +1,10 @@
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import Paper from "@mui/material/Paper";
-import { Link } from "@mui/material";
 import IconPhone from "./IconPhone";
-import ViberIcon from "./ViberIcon";
-import WhatsAppIcon from "./WhatsAppIcon";
-import TelegramIcon from "./TelegramIcon";
+import IconViber from "./IconViber";
+// import IconWhatsApp from "./IconWhatsApp";
+import IconTelegram from "./IconTelegram";
 
 function BottomNavPanel() {
   return (
@@ -23,22 +22,46 @@ function BottomNavPanel() {
         >
           <BottomNavigationAction
             href="tel:+380931104435"
-            icon={<IconPhone />}
+            icon={
+              <img
+                className="instagram-facebook-phone-mobile"
+                src="/logoPhone.png"
+                // src="http://s1.iconbird.com/ico/2013/9/446/w512h5121380376664MetroUIPhone.png"
+              />
+            }
           />
 
           <BottomNavigationAction
             href="viber://chat?number=%2B380931104435"
-            icon={<ViberIcon />}
+            icon={
+              <img
+                className="instagram-facebook-phone-mobile"
+                src="/logoViber.png"
+                // src="https://myfirstcomp.ru/wp-content/uploads/2020/05/viber-LOGO.png"
+              />
+            }
           />
 
           <BottomNavigationAction
             href="https://api.whatsapp.com/send?phone=+380931104435"
-            icon={<WhatsAppIcon />}
+            icon={
+              <img
+                className="instagram-facebook-phone-mobile"
+                src="/logoWhatsApp.png"
+                // src="https://pngimg.com/uploads/whatsapp/small/whatsapp_PNG4.png"
+              />
+            }
           />
 
           <BottomNavigationAction
             href="https://telegram.me/Mavrik55"
-            icon={<TelegramIcon />}
+            icon={
+              <img
+                className="instagram-facebook-phone-mobile"
+                src="/logoTelegram.png"
+                // src="https://pngicon.ru/file/uploads/telegram-256x256.png"
+              />
+            }
           />
         </BottomNavigation>
       </Paper>

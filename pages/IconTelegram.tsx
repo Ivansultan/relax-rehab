@@ -1,11 +1,11 @@
-function TelegramIcon() {
+function IconTelegram() {
   return (
     <img
       className="instagram-facebook-phone-mobile"
       // src="https://pngicon.ru/file/uploads/telegram-256x256.png"
-      src="/telegram.png"
+      src="/logoTelegram.png"
     />
   );
 }
 
-export default TelegramIcon;
+export default IconTelegram;

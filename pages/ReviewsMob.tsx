@@ -1,6 +1,6 @@
 import BottomNavPanel from "./BottomNavPanel";
 import MainLayout from "./MainLayout";
-import LogoPic from "./Images/logo2.png";
+import logoPic from "../public/logo2.png";
 import Image from "next/image";
 import MenuMobile from "./MenuMobile";
 import Button from "@material-ui/core/Button";
@@ -28,7 +28,7 @@ function ReviewsMob() {
       <div className="reviews-container-mobile">
         <div className="menu-header-mobile">
           <div className="menu-logo-mobile">
-            <Image src={LogoPic} />
+            <Image src={logoPic} />
           </div>
           <div className="menu-title-mobile">
             <h2>

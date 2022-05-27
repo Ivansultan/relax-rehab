@@ -15,7 +15,8 @@ function TitleContacts() {
           <div className="phone-icon">
             <img
               className="phone"
-              src="http://s1.iconbird.com/ico/2013/9/446/w512h5121380376664MetroUIPhone.png"
+              src="/logoPhone.png"
+              // src="http://s1.iconbird.com/ico/2013/9/446/w512h5121380376664MetroUIPhone.png"
             />
           </div>
           <div className="phone-number">
@@ -26,13 +27,15 @@ function TitleContacts() {
           <Link href="https://www.facebook.com/profile.php?id=100074749413242">
             <img
               className="social-network"
-              src={"https://pngicon.ru/file/uploads/FaceBook_512x512.png"}
+              src="/logoFaceBook.png"
+              // src="https://pngicon.ru/file/uploads/FaceBook_512x512.png"
             />
           </Link>
           <Link href="https://instagram.com/jenya_massage_kiev?utm_medium=copy_link">
             <img
               className="social-network"
-              src="https://free-png.ru/wp-content/uploads/2019/05/Logotip-instagram-t.png"
+              src="/logoInstagram.png"
+              // src="https://free-png.ru/wp-content/uploads/2019/05/Logotip-instagram-t.png"
             />
           </Link>
         </div>

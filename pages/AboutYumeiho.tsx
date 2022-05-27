@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Yumeiho from "./Images/yumeiho.png";
-import Yumeiho2 from "./Images/yumeiho2.jpg";
+import Yumeiho from "../public/yumeiho.png";
+import Yumeiho2 from "../public/yumeiho2.jpg";
 import Footer from "./Footer";
 import { FormattedMessage } from "react-intl";
 

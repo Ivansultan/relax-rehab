@@ -1,6 +1,6 @@
 import BottomNavPanel from "./BottomNavPanel";
 import MainLayout from "./MainLayout";
-import LogoPic from "./Images/logo2.png";
+import logoPic from "../public/logo2.png";
 import Image from "next/image";
 import MenuMobile from "./MenuMobile";
 import Button from "@mui/material/Button";
@@ -14,7 +14,7 @@ function ContactsMob() {
         <div className="contacts-container-mobile">
           <div className="menu-header-mobile">
             <div className="menu-logo-mobile">
-              <Image src={LogoPic} />
+              <Image src={logoPic} />
             </div>
             <div className="menu-title-mobile">
               <h2>
@@ -66,7 +66,8 @@ function ContactsMob() {
                   >
                     <img
                       className="facebook-icon-mob"
-                      src="https://pngicon.ru/file/uploads/FaceBook_512x512.png"
+                      src="/logoFacebook.png"
+                      // src="https://pngicon.ru/file/uploads/FaceBook_512x512.png"
                     />
                   </Button>
                 </Link>
@@ -79,7 +80,8 @@ function ContactsMob() {
                   >
                     <img
                       className="instagram-icon-mob"
-                      src="https://free-png.ru/wp-content/uploads/2019/05/Logotip-instagram-t.png"
+                      src="/logoInstagram.png"
+                      // src="https://free-png.ru/wp-content/uploads/2019/05/Logotip-instagram-t.png"
                     />
                   </Button>
                 </Link>
