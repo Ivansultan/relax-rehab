@@ -67,7 +67,6 @@ function ContactsMob() {
                     <img
                       className="facebook-icon-mob"
                       src="/logoFacebook.png"
-                      // src="https://pngicon.ru/file/uploads/FaceBook_512x512.png"
                     />
                   </Button>
                 </Link>
@@ -81,7 +80,6 @@ function ContactsMob() {
                     <img
                       className="instagram-icon-mob"
                       src="/logoInstagram.png"
-                      // src="https://free-png.ru/wp-content/uploads/2019/05/Logotip-instagram-t.png"
                     />
                   </Button>
                 </Link>

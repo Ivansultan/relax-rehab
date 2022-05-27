@@ -59,11 +59,7 @@ function PopoverPopupState() {
                 >
                   <div className="phone-container-web">
                     <div className="phone-section-web">
-                      <img
-                        className="phone-web"
-                        src="/logoPhone.png"
-                        // src="http://s1.iconbird.com/ico/2013/9/446/w512h5121380376664MetroUIPhone.png"
-                      />
+                      <img className="phone-web" src="/logoPhone.png" />
                       <p className="number">+38 (093) 110-44-35</p>
                     </div>
                   </div>
@@ -83,7 +79,6 @@ function PopoverPopupState() {
                     <img
                       className="facebook-icon-web"
                       src="/logoFaceBook.png"
-                      // src="https://pngicon.ru/file/uploads/FaceBook_512x512.png"
                     />
                   </Button>
                 </Link>
@@ -97,7 +92,6 @@ function PopoverPopupState() {
                     <img
                       className="instagram-icon-web"
                       src="/logoInstagram.png"
-                      // src="https://free-png.ru/wp-content/uploads/2019/05/Logotip-instagram-t.png"
                     />
                   </Button>
                 </Link>
