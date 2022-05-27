@@ -1,10 +1,6 @@
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import Paper from "@mui/material/Paper";
-import IconPhone from "./IconPhone";
-import IconViber from "./IconViber";
-// import IconWhatsApp from "./IconWhatsApp";
-import IconTelegram from "./IconTelegram";
 
 function BottomNavPanel() {
   return (
