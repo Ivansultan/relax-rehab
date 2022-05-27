@@ -9,7 +9,7 @@ import {
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
-import MasonryLayout from "./MasonryLayout";
+// import MasonryLayout from "./MasonryLayout";
 import { FormattedMessage } from "react-intl";
 import useStyles from "./styles";
 
@@ -450,7 +450,7 @@ const Massages = (props: Props) => {
               </div>
 
               <div className={classes.modalImages}>
-                <MasonryLayout images={activeMassage?.images! ?? []} />
+                {/* <MasonryLayout images={activeMassage?.images! ?? []} /> */}
               </div>
 
               <div>

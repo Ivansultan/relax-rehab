@@ -1,120 +1,125 @@
-import React, { useState, useEffect, useRef } from "react";
+// import React, { useState, useEffect, useRef } from "react";
 
-let brakePoints = [350, 500, 750];
-let images = [];
-const imgId = [1011, 883, 1074, 823, 64, 65, 839, 314, 256, 316, 92, 643];
-for (let i = 0; i < imgId.length; i++) {
-  const ih = 200 + Math.floor(Math.random() * 10) * 15;
-  images.push("https://unsplash.it/250/" + ih + "?image=" + imgId[i]);
+function User() {
+  return <div></div>;
 }
+export default User;
 
-type Props = {
-  images: any[];
-};
+// let brakePoints = [350, 500, 750];
+// let images = [];
+// const imgId = [1011, 883, 1074, 823, 64, 65, 839, 314, 256, 316, 92, 643];
+// for (let i = 0; i < imgId.length; i++) {
+//   const ih = 200 + Math.floor(Math.random() * 10) * 15;
+//   images.push("https://unsplash.it/250/" + ih + "?image=" + imgId[i]);
+// }
 
-function MasonryLayout(props: { images: any[] }) {
-  return (
-    <div className="container">
-      <div className="masonry-container">
-        <Masonry brakePoints={brakePoints}>
-          {props.images.map((image, id) => {
-            return <Tile key={id} src={image} />;
-          })}
-        </Masonry>
-      </div>
-    </div>
-  );
-}
+// type Props = {
+//   images: any[];
+// };
 
-type TileProps = {
-  src: string;
-};
+// function MasonryLayout(props: { images: any[] }) {
+//   return (
+//     <div className="container">
+//       <div className="masonry-container">
+//         <Masonry brakePoints={brakePoints}>
+//           {props.images.map((image, id) => {
+//             return <Tile key={id} src={image} />;
+//           })}
+//         </Masonry>
+//       </div>
+//     </div>
+//   );
+// }
 
-export const Tile = ({ src }: TileProps) => {
-  return (
-    <div className="tile">
-      <img src={src} alt="" />
-    </div>
-  );
-};
+// type TileProps = {
+//   src: string;
+// };
 
-type MasonryProps = {
-  brakePoints: number[];
-  children: any;
-  cardStyle?: {};
-};
+// export const Tile = ({ src }: TileProps) => {
+//   return (
+//     <div className="tile">
+//       <img src={src} alt="" />
+//     </div>
+//   );
+// };
 
-type MasonryState = {
-  columns: number;
-};
+// type MasonryProps = {
+//   brakePoints: number[];
+//   children: any;
+//   cardStyle?: {};
+// };
 
-export const Masonry = (props: MasonryProps) => {
-  const [columns, setColumns] = useState<number>(1);
-  useEffect(() => {
-    onResize();
-    window.addEventListener("resize", onResize);
-  }, []);
+// type MasonryState = {
+//   columns: number;
+// };
 
-  const ref = useRef(null);
+// export const Masonry = (props: MasonryProps) => {
+//   const [columns, setColumns] = useState<number>(1);
+//   useEffect(() => {
+//     onResize();
+//     window.addEventListener("resize", onResize);
+//   }, []);
 
-  const getColumns = (w: number) => {
-    return (
-      props.brakePoints.reduceRight((p, c, i) => {
-        return c < w ? p : i;
-      }, props.brakePoints.length) + 1
-    );
-  };
+//   const ref = useRef(null);
 
-  const onResize = () => {
-    console.log(ref);
-    const _columns = getColumns((ref?.current as any)?.offsetWidth);
-    console.log("columns", columns);
-    if (_columns !== columns) {
-      setColumns(_columns);
-    }
-  };
+//   const getColumns = (w: number) => {
+//     return (
+//       props.brakePoints.reduceRight((p, c, i) => {
+//         return c < w ? p : i;
+//       }, props.brakePoints.length) + 1
+//     );
+//   };
 
-  const mapChildren = (): any[] => {
-    let col = [];
-    const numC = columns;
-    for (let i = 0; i < numC; i++) {
-      col.push([]);
-    }
-    // @ts-ignore
-    return (props.children as any).reduce((p, c, i) => {
-      p[i % numC].push(c);
+//   const onResize = () => {
+//     console.log(ref);
+//     const _columns = getColumns((ref?.current as any)?.offsetWidth);
+//     console.log("columns", columns);
+//     if (_columns !== columns) {
+//       setColumns(_columns);
+//     }
+//   };
 
-      return p;
-    }, col);
-  };
+//   const mapChildren = (): any[] => {
+//     let col = [];
+//     const numC = columns;
+//     for (let i = 0; i < numC; i++) {
+//       col.push([]);
+//     }
+//     // @ts-ignore
+//     return (props.children as any).reduce((p, c, i) => {
+//       p[i % numC].push(c);
 
-  return (
-    <div className="masonry" ref={ref}>
-      {mapChildren().map((col, ci) => {
-        return (
-          <div className="column" key={ci}>
-            {col.map(
-              // @ts-ignore
-              (child, i) => {
-                return (
-                  <div
-                    style={{
-                      borderRadius: 20,
-                      ...props.cardStyle,
-                    }}
-                    key={i}
-                  >
-                    {" "}
-                    {child}{" "}
-                  </div>
-                );
-              }
-            )}
-          </div>
-        );
-      })}
-    </div>
-  );
-};
+//       return p;
+//     }, col);
+//   };
 
-export default MasonryLayout;
+//   return (
+//     <div className="masonry" ref={ref}>
+//       {mapChildren().map((col, ci) => {
+//         return (
+//           <div className="column" key={ci}>
+//             {col.map(
+//               // @ts-ignore
+//               (child, i) => {
+//                 return (
+//                   <div
+//                     style={{
+//                       borderRadius: 20,
+//                       ...props.cardStyle,
+//                     }}
+//                     key={i}
+//                   >
+//                     {" "}
+//                     {child}{" "}
+//                   </div>
+//                 );
+//               }
+//             )}
+//           </div>
+//         );
+//       })}
+//     </div>
+//   );
+// };
+
+// export default MasonryLayout;
