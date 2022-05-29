@@ -1,14 +1,14 @@
 import Link from "next/link";
-import PopoverContacts from "./PopoverContacts";
+import PopoverContacts from "../src/components/PopoverContacts";
 import Button from "@material-ui/core/Button";
 import logoPic from "../public/logo2.png";
-import Languages from "./Languages";
-import TitleContacts from "./TitleContacts";
+import Languages from "../src/components/Languages";
+import TitleContacts from "../src/components/TitleContacts";
 import Image from "next/image";
-import Massages from "./Massages";
+import Massages from "../src/components/Massages";
 import { languages } from "./index";
-import PopoverSign from "./PopoverSign";
-import AboutYumeiho from "./AboutYumeiho";
+import PopoverSign from "../src/components/PopoverSign";
+import AboutYumeiho from "../src/components/AboutYumeiho";
 import { FormattedMessage } from "react-intl";
 import { useRouter } from "next/router";
 

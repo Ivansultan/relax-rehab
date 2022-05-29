@@ -1,7 +1,7 @@
 import HomePage from "./HomePage";
-import MainLayout from "./MainLayout";
+import MainLayout from "../src/components/MainLayout";
 import React, { useState } from "react";
-import BottomNavPanel from "./BottomNavPanel";
+import BottomNavPanel from "../src/components/BottomNavPanel";
 
 type Locale = "en" | "ua" | "ru";
 

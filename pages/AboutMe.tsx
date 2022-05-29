@@ -1,16 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import Button from "@material-ui/core/Button";
+import { FormattedMessage } from "react-intl";
+import BottomNavPanel from "../src/components/BottomNavPanel";
+import MainLayout from "../src/components/MainLayout";
+import MenuMobile from "../src/components/MenuMobile";
 import MyPic from "../public/about.jpg";
-import BottomNavPanel from "./BottomNavPanel";
-import MainLayout from "./MainLayout";
 import logoPic from "../public/logo2.png";
-import MenuMobile from "./MenuMobile";
 import Diploma1 from "../public/diploma1.jpg";
 import Diploma2 from "../public/diploma2.jpg";
 import Diploma3 from "../public/diploma3.jpg";
 import Diploma4 from "../public/diploma4.jpg";
-import { FormattedMessage } from "react-intl";
 
 function AboutMe() {
   return (

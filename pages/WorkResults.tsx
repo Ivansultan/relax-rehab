@@ -8,10 +8,10 @@ import Results4 from "../public/results4.jpg";
 import Results5 from "../public/results5.jpg";
 import Results6 from "../public/results6.jpg";
 import { FormattedMessage } from "react-intl";
-import BottomNavPanel from "./BottomNavPanel";
-import MainLayout from "./MainLayout";
+import BottomNavPanel from "../src/components/BottomNavPanel";
+import MainLayout from "../src/components/MainLayout";
 import logoPic from "../public/logo2.png";
-import MenuMobile from "./MenuMobile";
+import MenuMobile from "../src/components/MenuMobile";
 
 function WorkResults() {
   return (

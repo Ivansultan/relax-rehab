@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Yumeiho from "../public/yumeiho.png";
-import Yumeiho2 from "../public/yumeiho2.jpg";
 import Footer from "./Footer";
 import { FormattedMessage } from "react-intl";
+import Yumeiho from "../../public/yumeiho.png";
+import Yumeiho2 from "../../public/yumeiho2.jpg";
 
 function AboutYumeiho() {
   return (
