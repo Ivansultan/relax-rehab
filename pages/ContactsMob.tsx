@@ -66,7 +66,7 @@ function ContactsMob() {
                   >
                     <img
                       className="facebook-icon-mob"
-                      src="/logoFacebook.png"
+                      src="/logoFaceBook.png"
                     />
                   </Button>
                 </Link>
