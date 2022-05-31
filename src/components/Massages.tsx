@@ -13,7 +13,6 @@ import MasonryLayout from "./MasonryLayout";
 import { FormattedMessage } from "react-intl";
 import { makeStyles } from "@material-ui/core";
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     minWidth: 275,
@@ -107,7 +106,6 @@ const useStyles = makeStyles((theme) => ({
     opacity: 0.8,
   },
 }));
-
 
 export type MassageType = "japanese" | "vietnamese" | "relaxing" | "visceral";
 type ExtraInfo = {
@@ -239,10 +237,10 @@ const Massages = (props: Props) => {
         />
       ),
       images: [
-        "/Vietnamese1.jpg",
-        "/Vietnamese2.jpg",
-        "/Vietnamese3.jpg",
-        "/Vietnamese4.jpg",
+        "/vietnamese1.jpg",
+        "/vietnamese2.jpg",
+        "/vietnamese3.jpg",
+        "/vietnamese4.jpg",
       ],
 
       extraInfo: [
