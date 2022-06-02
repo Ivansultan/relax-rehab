@@ -11,7 +11,7 @@ import PopoverSign from "../src/components/PopoverSign";
 import AboutYumeiho from "../src/components/AboutYumeiho";
 import { FormattedMessage } from "react-intl";
 import { useRouter } from "next/router";
-import pathes from "../src/paths";
+import paths from "../src/paths";
 
 const HomePage = () => {
   const { locale } = useRouter();
@@ -89,7 +89,7 @@ const HomePage = () => {
               </div>
 
               <div className="results">
-                <Link href={pathes.results}>
+                <Link href={paths.results}>
                   <Button
                     style={{
                       backgroundColor: "transparent",
@@ -109,7 +109,7 @@ const HomePage = () => {
               </div>
 
               <div className="faq">
-                <Link href={pathes.faq}>
+                <Link href={paths.faq}>
                   <Button
                     style={{
                       backgroundColor: "transparent",
@@ -126,7 +126,7 @@ const HomePage = () => {
 
             <div className="right-section">
               <div className="about-me">
-                <Link href={pathes.about}>
+                <Link href={paths.about}>
                   <Button
                     style={{
                       backgroundColor: "transparent",
@@ -146,7 +146,7 @@ const HomePage = () => {
               </div>
 
               <div className="reviews">
-                <Link href={pathes.reviews}>
+                <Link href={paths.reviews}>
                   <Button
                     style={{
                       backgroundColor: "transparent",

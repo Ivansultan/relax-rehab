@@ -1,6 +1,6 @@
 import MainLayout from "./MainLayout";
 import { FormattedMessage } from "react-intl";
-import pathes from "../../src/paths";
+import paths from "../../src/paths";
 
 function MenuMobile() {
   return (
@@ -19,20 +19,20 @@ function MenuMobile() {
               </a>
             </li>
             <li>
-              <a href={pathes.results}>
+              <a href={paths.results}>
                 <FormattedMessage id="Results" defaultMessage="Results" />
               </a>
             </li>
             <li>
-              <a href={pathes.faq}>FAQ</a>
+              <a href={paths.faq}>FAQ</a>
             </li>
             <li>
-              <a href={pathes.about}>
+              <a href={paths.about}>
                 <FormattedMessage id="About me" defaultMessage="About me" />
               </a>
             </li>
             <li>
-              <a href={pathes.reviews}>
+              <a href={paths.reviews}>
                 <FormattedMessage id="Reviews" defaultMessage="Reviews" />
               </a>
             </li>
