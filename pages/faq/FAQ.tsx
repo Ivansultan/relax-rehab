@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Button from "@material-ui/core/Button";
 import { FormattedMessage } from "react-intl";
-import MainLayout from "../src/components/MainLayout";
+import MainLayout from "../../src/components/MainLayout";
 import logoPic from "../public/logo2.png";
 import Image from "next/image";
-import MenuMobile from "../src/components/MenuMobile";
-import BottomNavPanel from "../src/components/BottomNavPanel";
+import MenuMobile from "../../src/components/MenuMobile";
+import BottomNavPanel from "../../src/components/BottomNavPanel";
 
 function FAQ() {
   return (

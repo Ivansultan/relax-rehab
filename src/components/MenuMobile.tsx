@@ -19,12 +19,12 @@ function MenuMobile() {
               </a>
             </li>
             <li>
-              <a href="/WorkResults">
+              <a href={pathes.results}>
                 <FormattedMessage id="Results" defaultMessage="Results" />
               </a>
             </li>
             <li>
-              <a href="/FAQ">FAQ</a>
+              <a href={pathes.faq}>FAQ</a>
             </li>
             <li>
               <a href={pathes.about}>
@@ -32,7 +32,7 @@ function MenuMobile() {
               </a>
             </li>
             <li>
-              <a href="/ReviewsMob">
+              <a href={pathes.reviews}>
                 <FormattedMessage id="Reviews" defaultMessage="Reviews" />
               </a>
             </li>

@@ -89,7 +89,7 @@ const HomePage = () => {
               </div>
 
               <div className="results">
-                <Link href={"/WorkResults"}>
+                <Link href={pathes.results}>
                   <Button
                     style={{
                       backgroundColor: "transparent",
@@ -109,7 +109,7 @@ const HomePage = () => {
               </div>
 
               <div className="faq">
-                <Link href={"/FAQ"}>
+                <Link href={pathes.faq}>
                   <Button
                     style={{
                       backgroundColor: "transparent",
@@ -146,7 +146,7 @@ const HomePage = () => {
               </div>
 
               <div className="reviews">
-                <Link href={"/ReviewsWeb"}>
+                <Link href={pathes.reviews}>
                   <Button
                     style={{
                       backgroundColor: "transparent",

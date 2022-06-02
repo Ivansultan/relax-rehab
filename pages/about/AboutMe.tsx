@@ -15,7 +15,7 @@ import Diploma4 from "../../public/diploma4.jpg";
 const AboutMe = () => {
   return (
     <>
-      <MainLayout title="About Me">
+      <MainLayout title="">
         <div className="container-about-web">
           <div className="header-section-about-web">
             <Link href={"/"}>
@@ -157,6 +157,6 @@ const AboutMe = () => {
       </MainLayout>
     </>
   );
-}
+};
 
 export default AboutMe;
