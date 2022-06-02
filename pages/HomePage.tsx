@@ -11,6 +11,7 @@ import PopoverSign from "../src/components/PopoverSign";
 import AboutYumeiho from "../src/components/AboutYumeiho";
 import { FormattedMessage } from "react-intl";
 import { useRouter } from "next/router";
+import pathes from "../src/paths";
 
 const HomePage = () => {
   const { locale } = useRouter();
@@ -125,7 +126,7 @@ const HomePage = () => {
 
             <div className="right-section">
               <div className="about-me">
-                <Link href={"/AboutMe"}>
+                <Link href={pathes.about}>
                   <Button
                     style={{
                       backgroundColor: "transparent",

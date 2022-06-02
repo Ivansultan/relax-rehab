@@ -2,6 +2,7 @@ body {
   margin: 0;
   margin-bottom: 10px;
   background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/escheresque_ste.png');
+  background-color: #313131;
 }
 
 html {

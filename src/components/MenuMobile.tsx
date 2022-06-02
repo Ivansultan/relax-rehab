@@ -1,5 +1,6 @@
 import MainLayout from "./MainLayout";
 import { FormattedMessage } from "react-intl";
+import pathes from "../../src/paths";
 
 function MenuMobile() {
   return (
@@ -26,7 +27,7 @@ function MenuMobile() {
               <a href="/FAQ">FAQ</a>
             </li>
             <li>
-              <a href="/AboutMe">
+              <a href={pathes.about}>
                 <FormattedMessage id="About me" defaultMessage="About me" />
               </a>
             </li>
