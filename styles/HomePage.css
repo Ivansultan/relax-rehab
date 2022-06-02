@@ -137,6 +137,9 @@
 .work-results-container-web {
   display: none;
 }
+.btn-back {
+  display: none;
+}
   
 }
 
@@ -182,6 +185,12 @@
     display: none;
   }
   .work-results-container-mobile {
+    display: none;
+  }
+  .menu-logo-mobile {
+    display: none;
+  }
+  .line {
     display: none;
   }
 }

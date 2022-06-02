@@ -24,7 +24,7 @@ function ReviewsWeb() {
 
   return (
     <>
-      <div className="container-web">
+      <div className="reviews-container-web">
         <Link href={"/"}>
           <Button
             style={{

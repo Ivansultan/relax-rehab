@@ -13,6 +13,22 @@ function ContactsMob() {
       <MainLayout title="Юмейхо терапия / Результаты работ">
         <div className="contacts-container-mobile">
           <div className="menu-header-mobile">
+            <div className="btn-back">
+              <Link href={"/"}>
+                <Button
+                  style={{
+                    backgroundColor: "transparent",
+                    opacity: 1,
+                    color: "whitesmoke",
+                    border: "1px solid whitesmoke",
+                  }}
+                >
+                  <span style={{ fontSize: "medium" }}>
+                    <FormattedMessage id="Back" defaultMessage="Back" />
+                  </span>
+                </Button>
+              </Link>
+            </div>
             <div className="menu-logo-mobile">
               <Image src={logoPic} />
             </div>

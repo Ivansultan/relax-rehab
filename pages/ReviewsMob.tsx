@@ -5,6 +5,7 @@ import Image from "next/image";
 import MenuMobile from "../src/components/MenuMobile";
 import Button from "@material-ui/core/Button";
 import { FormattedMessage } from "react-intl";
+import ReviewsWeb from "./ReviewsWeb";
 
 function ReviewsMob() {
   const readMore = () => {
@@ -82,6 +83,7 @@ function ReviewsMob() {
           </div>
         </div>
       </div>
+      <ReviewsWeb />
       <BottomNavPanel />
     </MainLayout>
   );
