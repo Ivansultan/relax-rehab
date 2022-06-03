@@ -1,6 +1,6 @@
-import { languages } from "../../pages/index";
+import { languages } from "../pages/index";
 import Image from "next/image";
-import logoPic from "../../public/logo2.png";
+import logoPic from "/public/logo2.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
 

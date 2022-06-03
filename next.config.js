@@ -10,6 +10,5 @@ module.exports = {
     locales: ["en", "ua", "ru"],
     defaultLocale: "ua",
     localeDetection: false,
-  },
-  // pageExtensions: ["page.tsx", "page.ts", "page.jsx", "page.js"],
+  }
 };

@@ -1,7 +1,7 @@
-import HomePage from "./HomePage";
-import MainLayout from "../src/components/MainLayout";
+import MainLayout from "src/components/MainLayout";
 import React, { useState } from "react";
-import BottomNavPanel from "../src/components/BottomNavPanel";
+import BottomNavPanel from "src/components/BottomNavPanel";
+import HomePage from "./HomePage";
 
 type Locale = "en" | "ua" | "ru";
 
@@ -15,6 +15,7 @@ export const languages: Language[] = [
   { name: "UA", locale: "ua" },
   { name: "RU", locale: "ru" },
 ];
+
 
 function App() {
   const [_window, setSize] = useState(undefined);

@@ -1,18 +1,18 @@
-import "../styles/global.css";
-import "../styles/HomePage.css";
-import "../styles/MasonryLayout.css";
-import "../styles/MenuMobile.css";
-import "../styles/AboutYumeiho.css";
-import "../styles/WorkResults.css";
-import "../styles/FAQ.css";
-import "../styles/AboutMe.css";
-import "../styles/Reviews.css";
-import "../styles/Footer.css";
-import "../styles/ContactsMob.css";
+import "../../styles/global.css";
+import "../../styles/HomePage.css";
+import "../../styles/MasonryLayout.css";
+import "../../styles/MenuMobile.css";
+import "../../styles/AboutYumeiho.css";
+import "../../styles/WorkResults.css";
+import "../../styles/FAQ.css";
+import "../../styles/AboutMe.css";
+import "../../styles/Reviews.css";
+import "../../styles/Footer.css";
+import "../../styles/ContactsMob.css";
 import Head from "next/head";
-import English from "../content/compiled-locales/en.json";
-import Ukrainian from "../content/compiled-locales/ua.json";
-import Russian from "../content/compiled-locales/ru.json";
+import English from "../../content/compiled-locales/en.json";
+import Ukrainian from "../../content/compiled-locales/ua.json";
+import Russian from "../../content/compiled-locales/ru.json";
 import { useRouter } from "next/router";
 import { useMemo } from "react";
 import { IntlProvider } from "react-intl";
@@ -24,6 +24,7 @@ function MyApp({ Component, pageProps }) {
   const messages = useMemo(() => {
     switch (shortLocale) {
       case "en":
+        console.log(English);
         return English;
       case "ua":
         return Ukrainian;

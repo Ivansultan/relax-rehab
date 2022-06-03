@@ -1,6 +1,7 @@
 import MainLayout from "./MainLayout";
 import { FormattedMessage } from "react-intl";
-import paths from "../../src/paths";
+import paths from "src/paths";
+import Link from "next/link";
 
 function MenuMobile() {
   return (
@@ -14,32 +15,42 @@ function MenuMobile() {
         <div className="wrapper">
           <ul>
             <li>
-              <a href="/">
-                <FormattedMessage id="Main" defaultMessage="Main" />
-              </a>
+              <Link href={paths.home}>
+                <a>
+                  <FormattedMessage id="Main" defaultMessage="Main" />
+                </a>
+              </Link>
             </li>
             <li>
-              <a href={paths.results}>
-                <FormattedMessage id="Results" defaultMessage="Results" />
-              </a>
+              <Link href={paths.results}>
+                <a>
+                  <FormattedMessage id="Results" defaultMessage="Results" />
+                </a>
+              </Link>
             </li>
             <li>
-              <a href={paths.faq}>FAQ</a>
+              <Link href={paths.faq}>FAQ</Link>
             </li>
             <li>
-              <a href={paths.about}>
-                <FormattedMessage id="About me" defaultMessage="About me" />
-              </a>
+              <Link href={paths.about_me}>
+                <a>
+                  <FormattedMessage id="About me" defaultMessage="About me" />
+                </a>
+              </Link>
             </li>
             <li>
-              <a href={paths.reviews}>
-                <FormattedMessage id="Reviews" defaultMessage="Reviews" />
-              </a>
+              <Link href={paths.reviews_mobile}>
+                <a>
+                  <FormattedMessage id="Reviews" defaultMessage="Reviews" />
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="/ContactsMob">
-                <FormattedMessage id="Contacts" defaultMessage="Contacts" />
-              </a>
+              <Link href={paths.contacts_mobile}>
+                <a>
+                  <FormattedMessage id="Contacts" defaultMessage="Contacts" />
+                </a>
+              </Link>
             </li>
           </ul>
         </div>

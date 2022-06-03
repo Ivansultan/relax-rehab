@@ -1,11 +1,11 @@
-import BottomNavPanel from "../../src/components/BottomNavPanel";
-import MainLayout from "../../src/components/MainLayout";
-import logoPic from "../public/logo2.png";
+import BottomNavPanel from "src/components/BottomNavPanel";
+import MainLayout from "src/components/MainLayout";
+import logoPic from "/public/logo2.png";
 import Image from "next/image";
-import MenuMobile from "../../src/components/MenuMobile";
+import MenuMobile from "src/components/MenuMobile";
 import Button from "@material-ui/core/Button";
 import { FormattedMessage } from "react-intl";
-import ReviewsWeb from "./ReviewsWeb";
+import ReviewsWeb from "../reviews";
 
 function ReviewsMob() {
   const readMore = () => {

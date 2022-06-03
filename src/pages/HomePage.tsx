@@ -1,21 +1,20 @@
 import Link from "next/link";
-import PopoverContacts from "../src/components/PopoverContacts";
+import PopoverContacts from "src/components/PopoverContacts";
 import Button from "@material-ui/core/Button";
-import logoPic from "../public/logo2.png";
-import Languages from "../src/components/Languages";
-import TitleContacts from "../src/components/TitleContacts";
+import logoPic from "public/logo2.png";
+import TitleContacts from "src/components/TitleContacts";
 import Image from "next/image";
-import Massages from "../src/components/Massages";
-import { languages } from "./index";
-import PopoverSign from "../src/components/PopoverSign";
-import AboutYumeiho from "../src/components/AboutYumeiho";
+import Massages from "src/components/Massages";
+import PopoverSign from "src/components/PopoverSign";
+import AboutYumeiho from "src/components/AboutYumeiho";
 import { FormattedMessage } from "react-intl";
+import paths from "src/paths";
+import Languages from "src/components/Languages";
+import { languages } from "./index";
 import { useRouter } from "next/router";
-import paths from "../src/paths";
 
 const HomePage = () => {
   const { locale } = useRouter();
-
   return (
     <>
       <div className="home-page-container">
@@ -43,7 +42,7 @@ const HomePage = () => {
                   {languages.map((language, index) => {
                     const isActiveLocale = language.locale === locale;
                     return (
-                      <Link href="/" key={index} locale={language.locale}>
+                      <Link href={`/${language.locale}`} key={index}>
                         <a
                           className="languages-mobile"
                           key={index}
@@ -126,7 +125,7 @@ const HomePage = () => {
 
             <div className="right-section">
               <div className="about-me">
-                <Link href={paths.about}>
+                <Link href={paths.about_me}>
                   <Button
                     style={{
                       backgroundColor: "transparent",

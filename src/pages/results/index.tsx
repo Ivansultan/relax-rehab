@@ -1,17 +1,17 @@
 import Link from "next/link";
 import Button from "@material-ui/core/Button";
 import Image from "next/image";
-import Results1 from "../public/results1.jpg";
-import Results2 from "../public/results2.jpg";
-import Results3 from "../public/results3.jpg";
-import Results4 from "../public/results4.jpg";
-import Results5 from "../public/results5.jpg";
-import Results6 from "../public/results6.jpg";
+import Results1 from "/public/results1.jpg";
+import Results2 from "/public/results2.jpg";
+import Results3 from "/public/results3.jpg";
+import Results4 from "/public/results4.jpg";
+import Results5 from "/public/results5.jpg";
+import Results6 from "/public/results6.jpg";
 import { FormattedMessage } from "react-intl";
-import BottomNavPanel from "../../src/components/BottomNavPanel";
-import MainLayout from "../../src/components/MainLayout";
-import logoPic from "../public/logo2.png";
-import MenuMobile from "../../src/components/MenuMobile";
+import BottomNavPanel from "src/components/BottomNavPanel";
+import MainLayout from "src/components/MainLayout";
+import logoPic from "/public/logo2.png";
+import MenuMobile from "src/components/MenuMobile";
 
 function WorkResults() {
   return (

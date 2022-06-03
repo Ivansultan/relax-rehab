@@ -1,8 +1,8 @@
-import BottomNavPanel from "../src/components/BottomNavPanel";
-import MainLayout from "../src/components/MainLayout";
-import logoPic from "../public/logo2.png";
+import BottomNavPanel from "src/components/BottomNavPanel";
+import MainLayout from "src/components/MainLayout";
+import logoPic from "/public/logo2.png";
 import Image from "next/image";
-import MenuMobile from "../src/components/MenuMobile";
+import MenuMobile from "src/components/MenuMobile";
 import Button from "@mui/material/Button";
 import Link from "next/link";
 import { FormattedMessage } from "react-intl";
