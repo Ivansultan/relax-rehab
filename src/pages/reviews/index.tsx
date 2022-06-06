@@ -2,6 +2,7 @@ import Link from "next/link";
 import Button from "@material-ui/core/Button";
 import React, { useState } from "react";
 import { FormattedMessage } from "react-intl";
+import MainLayout from "src/components/MainLayout";
 
 function ReviewsWeb() {
   const [color, setColor] = useState("red");
@@ -23,7 +24,7 @@ function ReviewsWeb() {
   };
 
   return (
-    <>
+    <MainLayout title="Yumeiho Therapy / reviews">
       <div className="reviews-container-web">
         <Link href={"/"}>
           <Button
@@ -82,7 +83,7 @@ function ReviewsWeb() {
           </big>
         </div>
       </div>
-    </>
+    </MainLayout>
   );
 }
 

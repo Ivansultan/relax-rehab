@@ -5,5 +5,5 @@ export default {
   faq: "/faq",
   reviews: "/reviews",
   reviews_mobile: "/reviews-mobile",
-  contacts_mobile: "/contacts"
+  contacts_mobile: "/contacts-mobile",
 };
