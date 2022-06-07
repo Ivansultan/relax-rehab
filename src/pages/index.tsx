@@ -35,6 +35,8 @@ function App() {
     setSize(window);
   }, []);
 
+  const { locale } = useRouter();
+
   if (!_window) {
     return (
       <div className="loading">
@@ -56,8 +58,7 @@ function App() {
     );
   }
 
-  const { innerHeight, innerWidth } = _window;
-  const { locale } = useRouter();
+  // const { innerHeight, innerWidth } = _window;
   return (
     <MainLayout title="Yumeiho Therapy">
       <div>

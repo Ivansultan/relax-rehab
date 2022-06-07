@@ -68,6 +68,7 @@
 }
 
 @media screen and (max-width: 766px) {
+  
   .city {
     display: none;
   }
@@ -199,18 +200,21 @@
   .logo-mobile {
     width: 102px;
   }
+ 
+}
+
+@media screen and (max-width: 550px) {
+  .main-title {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .title {
     font-size: 12px;
   }
-  
   .languages-mobile {
     font-size: 15px;
-  }
-  .main-title {
-    font-size: 13px;
   }
 }
 

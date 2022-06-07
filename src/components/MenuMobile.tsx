@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function MenuMobile() {
   return (
-    <MainLayout title={"Юмейхо терапия / Категории"}>
+    <MainLayout title="">
       <div className="menu-icon-container">
         <input type="checkbox" id="active" />
         <label htmlFor="active" className="menu-btn" style={{ zIndex: 1000 }}>
