@@ -24,7 +24,7 @@ function ReviewsWeb() {
   };
 
   return (
-    <MainLayout title="Yumeiho Therapy / reviews">
+    <MainLayout title="Yumeiho Therapy | reviews">
       <div className="reviews-container-web">
         <Link href={"/"}>
           <Button

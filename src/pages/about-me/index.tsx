@@ -14,7 +14,7 @@ import Diploma4 from "/public/diploma4.jpg";
 
 const AboutMe = () => {
   return (
-    <MainLayout title="Yumeiho Therapy / about-me">
+    <MainLayout title="Yumeiho Therapy | about me">
       <div className="container-about-web">
         <div className="header-section-about-web">
           <Link href={"/"}>
