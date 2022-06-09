@@ -1,6 +1,13 @@
 import Head from "next/head";
 import React from "react";
-export default function MainLayout({ children, title }) {
+
+type Props = {
+  title?: string;
+  children: any;
+}
+// TODO: Declare props typings properly
+
+export default function MainLayout({ children, title }: Props) {
   return (
     <>
       {title && (
