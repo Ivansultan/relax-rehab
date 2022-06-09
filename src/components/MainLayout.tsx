@@ -1,11 +1,13 @@
 import Head from "next/head";
 import React from "react";
-export default function MainLayout({ children, title = "Relax-rehab.me" }) {
+export default function MainLayout({ children, title }) {
   return (
     <>
-      <Head>
-        <title>{title}</title>
-      </Head>
+      {title && (
+        <Head>
+          <title>{title}</title>
+        </Head>
+      )}
 
       <main>{children}</main>
 
