@@ -40,6 +40,9 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Yumeiho therapy, massages" />
+        <meta name="keywords" content="massage, rehabilitation, relaxing" />
+        <meta name="author" content="Ivan Soltynchuk" />
       </Head>
       <IntlProvider
         locale={shortLocale}

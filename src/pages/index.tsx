@@ -58,9 +58,8 @@ function App() {
     );
   }
 
-  // const { innerHeight, innerWidth } = _window;
   return (
-    <MainLayout title="Yumeiho Therapy">
+    <MainLayout title="Yumeiho Therapy | Massages">
       <div>
         <div className="home-page-container">
           <div className="header">
