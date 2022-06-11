@@ -3,7 +3,6 @@ import Image from "next/image";
 import Button from "@material-ui/core/Button";
 import { FormattedMessage } from "react-intl";
 import BottomNavPanel from "src/components/BottomNavPanel";
-import MainLayout from "src/components/MainLayout";
 import MenuMobile from "src/components/MenuMobile";
 import MyPic from "/public/about.jpg";
 import logoPic from "/public/logo2.png";
@@ -11,10 +10,20 @@ import Diploma1 from "/public/diploma1.jpg";
 import Diploma2 from "/public/diploma2.jpg";
 import Diploma3 from "/public/diploma3.jpg";
 import Diploma4 from "/public/diploma4.jpg";
+import Head from "next/head";
 
 const AboutMe = () => {
   return (
-    <MainLayout title="Yumeiho Therapy | about me">
+    <div>
+      <Head>
+        <title>Юмейхо терапия, обо мне</title>
+        <meta
+          name="description"
+          content="Меня зовут Евгений Солтынчук, я представляю оздоровительную массажную систему Юмейхо, которая посредством комплекса манипуляций, позволяет устранить дисбаланс костей таза и позвоночника, а также эффективно и безопасно восстановить функциональное состояние всего организма. Также, система Юмейхо позиционирует себя как техника, позволяющая достичь идеала женской красоты и здоровья.
+          С 2016 года я являюсь сертифицированным специалистом в области реабилитационного массажа, и имею большой опыт работы массажем с людьми, связанными с тяжелыми физическими нагрузками, а также с теми, кто ведет малоподвижный образ жизни. Благодаря 20 летнему стажу профессиональной танцевальной карьеры, имею практику техники восстановления тела после травм: переломов костей, растяжений мышц и связок, ушибов, физических и эмоциональных перегрузок."
+        />
+        <meta name="keywords" content="Евгений Солтынчук, специалист, диплом" />
+      </Head>
       <div className="container-about-web">
         <div className="header-section-about-web">
           <Link href={"/"}>
@@ -148,7 +157,7 @@ const AboutMe = () => {
         </div>
       </div>
       <BottomNavPanel />
-    </MainLayout>
+    </div>
   );
 };
 

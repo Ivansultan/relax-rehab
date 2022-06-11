@@ -1,11 +1,10 @@
-import MainLayout from "./MainLayout";
 import { FormattedMessage } from "react-intl";
 import paths from "src/paths";
 import Link from "next/link";
 
 function MenuMobile() {
   return (
-    <MainLayout>
+    <div>
       <div className="menu-icon-container">
         <input type="checkbox" id="active" />
         <label htmlFor="active" className="menu-btn" style={{ zIndex: 1000 }}>
@@ -55,7 +54,7 @@ function MenuMobile() {
           </ul>
         </div>
       </div>
-    </MainLayout>
+    </div>
   );
 }
 

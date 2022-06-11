@@ -1,5 +1,4 @@
 import BottomNavPanel from "src/components/BottomNavPanel";
-import MainLayout from "src/components/MainLayout";
 import logoPic from "/public/logo2.png";
 import Image from "next/image";
 import MenuMobile from "src/components/MenuMobile";
@@ -9,7 +8,7 @@ import { FormattedMessage } from "react-intl";
 
 function ContactsMob() {
   return (
-    <MainLayout title="Yumeiho Therapy | contacts">
+    <div>
       <div className="contacts-container-mobile">
         <div className="menu-header-mobile">
           <div className="btn-back">
@@ -99,9 +98,8 @@ function ContactsMob() {
           </big>
         </div>
       </div>
-
       <BottomNavPanel />
-    </MainLayout>
+    </div>
   );
 }
 

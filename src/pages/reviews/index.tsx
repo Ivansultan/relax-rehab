@@ -2,7 +2,7 @@ import Link from "next/link";
 import Button from "@material-ui/core/Button";
 import React, { useState } from "react";
 import { FormattedMessage } from "react-intl";
-import MainLayout from "src/components/MainLayout";
+import Head from "next/head";
 
 function ReviewsWeb() {
   const [color, setColor] = useState("red");
@@ -24,7 +24,15 @@ function ReviewsWeb() {
   };
 
   return (
-    <MainLayout title="Yumeiho Therapy | reviews">
+    <div>
+      <Head>
+        <title>Юмейхо терапия, отзывы</title>
+        <meta
+          name="description"
+          content="Про Юмейхо слышала давно хорошие отзывы и очень интересно было попробовать. Этот массаж мне больше напоминает гимнастику с глубокой проработкой суставов. Первое впечатление, чувствуешь себя необычно, после скруток) После третьего сеанса, почувствовала легкость во всем теле и прилив энергии. Ну а дальше прям в кайф. Очень классное впечатление от массажа! С большим удовольствием еще повторю курс, т.к. внешне тоже видны изменения в лучшую сторону. Спасибо, Женя молодец"
+        />
+        <meta name="keywords" content="отзывы, клиенты" />
+      </Head>
       <div className="reviews-container-web">
         <Link href={"/"}>
           <Button
@@ -83,7 +91,7 @@ function ReviewsWeb() {
           </big>
         </div>
       </div>
-    </MainLayout>
+    </div>
   );
 }
 

@@ -1,15 +1,23 @@
 import Link from "next/link";
 import Button from "@material-ui/core/Button";
 import { FormattedMessage } from "react-intl";
-import MainLayout from "src/components/MainLayout";
 import logoPic from "/public/logo2.png";
 import Image from "next/image";
 import MenuMobile from "src/components/MenuMobile";
 import BottomNavPanel from "src/components/BottomNavPanel";
+import Head from "next/head";
 
 function FAQ() {
   return (
-    <MainLayout title="Yumeiho Therapy | FAQ">
+    <div>
+      <Head>
+        <title>Юмейхо терапия, FAQ</title>
+        <meta
+          name="description"
+          content="Чем Юмейхо терапия отличается от классического массажа? Классический массаж направлен на глубокую проработку мышц спины и выполняется на массажном столе. Массаж Юмейхо включает в себя – (японский) проработку мышц и фасций всего тела, мануальную терапию, висцеральный массаж; (вьетнамский) растяжки, скрутки, вытягивания, глубокие продавливания. Имеет системный подход к восстановлению организма и выполняется на мате."
+        />
+        <meta name="keywords" content="вопросы, ответы" />
+      </Head>
       <div className="faq-container-web">
         <Link href={"/"}>
           <Button
@@ -379,7 +387,7 @@ function FAQ() {
         </div>
       </div>
       <BottomNavPanel />
-    </MainLayout>
+    </div>
   );
 }
 

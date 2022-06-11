@@ -1,5 +1,4 @@
 import BottomNavPanel from "src/components/BottomNavPanel";
-import MainLayout from "src/components/MainLayout";
 import logoPic from "/public/logo2.png";
 import Image from "next/image";
 import MenuMobile from "src/components/MenuMobile";
@@ -25,7 +24,7 @@ function ReviewsMob() {
   };
 
   return (
-    <MainLayout title="Юмейхо терапия / Результаты работ">
+    <div>
       <div className="reviews-container-mobile">
         <div className="menu-header-mobile">
           <div className="menu-logo-mobile">
@@ -85,7 +84,7 @@ function ReviewsMob() {
       </div>
       <ReviewsWeb />
       <BottomNavPanel />
-    </MainLayout>
+    </div>
   );
 }
 
