@@ -6,10 +6,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* <meta name="description" content="Yumeiho therapy, massages" />
-          <meta name="keywords" content="massage, rehabilitation, relaxing" />
-          <meta name="author" content="Ivan Soltynchuk" /> */}
-          {/* ----------------------- */}
           <link
             href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
             rel="stylesheet"
@@ -19,7 +15,6 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-          {/* --------------------------- */}
         </Head>
         <style global jsx>{`
           html,
