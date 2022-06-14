@@ -5,10 +5,19 @@ import MenuMobile from "src/components/MenuMobile";
 import Button from "@mui/material/Button";
 import Link from "next/link";
 import { FormattedMessage } from "react-intl";
+import Head from "next/head";
 
 function ContactsMob() {
   return (
     <div>
+      <Head>
+        <title>Юмейхо терапия, контакты</title>
+        <meta
+          name="description"
+          content="Киев, +38 (093) 110-44-35, +38 (066) 118-16-08, Email: jen.solty@gmail.com, Євгений Солтынчук"
+        />
+        <meta name="keywords" content="контакты, телефон, Email, Extra info " />
+      </Head>
       <div className="contacts-container-mobile">
         <div className="menu-header-mobile">
           <div className="btn-back">

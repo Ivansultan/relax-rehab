@@ -5,6 +5,7 @@ import MenuMobile from "src/components/MenuMobile";
 import Button from "@material-ui/core/Button";
 import { FormattedMessage } from "react-intl";
 import ReviewsWeb from "../reviews";
+import Head from "next/head";
 
 function ReviewsMob() {
   const readMore = () => {
@@ -25,6 +26,14 @@ function ReviewsMob() {
 
   return (
     <div>
+      <Head>
+        <title>Юмейхо терапия, отзывы</title>
+        <meta
+          name="description"
+          content="Про Юмейхо слышала давно хорошие отзывы и очень интересно было попробовать. Этот массаж мне больше напоминает гимнастику с глубокой проработкой суставов. Первое впечатление, чувствуешь себя необычно, после скруток) После третьего сеанса, почувствовала легкость во всем теле и прилив энергии. Ну а дальше прям в кайф. Очень классное впечатление от массажа! С большим удовольствием еще повторю курс, т.к. внешне тоже видны изменения в лучшую сторону. Спасибо, Женя молодец"
+        />
+        <meta name="keywords" content="отзывы, клиенты" />
+      </Head>
       <div className="reviews-container-mobile">
         <div className="menu-header-mobile">
           <div className="menu-logo-mobile">
