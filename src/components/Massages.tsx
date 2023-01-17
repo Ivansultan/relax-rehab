@@ -129,8 +129,8 @@ const massagesData: MassageList = {
     title: <FormattedMessage id="Japanese" defaultMessage="Japanese" />,
     shortDescription: (
       <FormattedMessage
-        id="(45 min. - 1 hour) - 800 UAH"
-        defaultMessage="(45 min. - 1 hour) - 800 UAH"
+        id="(45 min. - 1 hour)"
+        defaultMessage="(45 min. - 1 hour)"
       />
     ),
     description: (
@@ -225,8 +225,8 @@ const massagesData: MassageList = {
     title: <FormattedMessage id="Vietnamese" defaultMessage="Vietnamese" />,
     shortDescription: (
       <FormattedMessage
-        id="(45 min. - 1 hour) - 800 UAH"
-        defaultMessage="(45 min. - 1 hour) - 800 UAH"
+        id="(45 min. - 1 hour)"
+        defaultMessage="(45 min. - 1 hour)"
       />
     ),
     description: (
@@ -328,8 +328,8 @@ const massagesData: MassageList = {
     shortDescription: (
       // <FormattedMessage id="Neck-collar area (remedial and relaxing massage)" />
       <FormattedMessage
-        id="(45 min. - 1 hour) - 500 UAH"
-        defaultMessage="(45 min. - 1 hour) - 500 UAH"
+        id="(45 min. - 1 hour)"
+        defaultMessage="(45 min. - 1 hour)"
       />
     ),
     description: (
@@ -389,8 +389,8 @@ const massagesData: MassageList = {
     title: <FormattedMessage id="Abdominal" defaultMessage="Abdominal" />,
     shortDescription: (
       <FormattedMessage
-        id="(45 min. - 1 hour) - 500 UAH"
-        defaultMessage="(45 min. - 1 hour) - 500 UAH"
+        id="(45 min. - 1 hour)"
+        defaultMessage="(45 min. - 1 hour)"
       />
     ),
     description: (
